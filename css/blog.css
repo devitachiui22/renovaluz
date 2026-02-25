@@ -1,0 +1,559 @@
+/* ==========================================================================
+   RENOVALUZ - ESTILOS EXCLUSIVOS DO BLOG (MODULAR & BLINDADO CONTRA CORTES)
+   ========================================================================== */
+
+/* ── CONFIGURAÇÕES GERAIS ── */
+.page-main {
+    padding-top: 80px; 
+}
+
+/* ── HERO SLIDER DO BLOG (VANILLA CROSSFADE) ── */
+.blog-hero {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    min-height: 500px;
+    overflow: hidden;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: center; /* Garante que o slider fica no centro */
+}
+
+.blog-slider-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.blog-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centralização Absoluta do Conteúdo do Slide */
+    padding: 0 6vw;
+    z-index: 1;
+}
+
+.blog-slide.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+.blog-slide-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.blog-slide-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(13,40,24,0.95) 0%, rgba(13,40,24,0.4) 100%);
+    z-index: 1;
+}
+
+.blog-slide-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    width: 100%;
+    text-align: center; /* Força o texto ao centro */
+}
+
+.slide-badge {
+    display: inline-block;
+    background: rgba(82, 183, 136, 0.2);
+    border: 1px solid var(--sage);
+    color: var(--sage);
+    padding: 6px 16px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.blog-slide-content h1 {
+    font-size: clamp(32px, 5vw, 56px);
+    line-height: 1.1;
+    margin-bottom: 16px;
+    color: var(--text);
+}
+
+.blog-slide-content h1 em {
+    color: var(--gold-lt);
+    font-style: italic;
+    font-weight: 600;
+}
+
+.blog-slide-content p {
+    font-size: 16px;
+    color: rgba(253, 250, 244, 0.8);
+    margin: 0 auto;
+}
+
+.slide-stats {
+    display: flex;
+    gap: 32px;
+    justify-content: center; /* Centralização das estatísticas */
+}
+
+.stat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-box strong {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    color: var(--gold-lt);
+    line-height: 1;
+}
+
+.stat-box span {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--sage);
+}
+
+.blog-slider-controls {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%); /* Controladores sempre ao centro */
+    display: flex;
+    gap: 12px;
+    z-index: 10;
+}
+
+.b-dot {
+    width: 32px;
+    height: 4px;
+    background: rgba(255,255,255,0.2);
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, width 0.3s;
+}
+
+.b-dot.active {
+    background: var(--gold);
+    width: 64px;
+}
+
+/* ── LAYOUT DO BLOG (MAIN + SIDEBAR BLINDADO) ── */
+.blog-grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 40px;
+    align-items: start;
+    width: 100%;
+}
+
+.blog-main-column {
+    min-width: 0; /* Regra mágica que impede a div de explodir o tamanho da tela */
+    width: 100%;
+}
+
+/* Filtros */
+.blog-filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-btn:hover {
+    border-color: var(--sage);
+    color: var(--text);
+}
+
+.filter-btn.active {
+    background: var(--sage);
+    border-color: var(--sage);
+    color: var(--forest);
+    font-weight: 600;
+}
+
+/* Grid de Artigos */
+.articles-grid {
+    display: grid;
+    /* min(100%, 280px) garante que nunca ultrapassa o tamanho da tela no mobile */
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+}
+
+.article-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+    background: var(--card);
+    width: 100%;
+    max-width: 100%;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--sage);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.article-img {
+    position: relative;
+    height: 220px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.article-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; /* Garante que as fotos das pessoas ficam sempre bem centradas */
+    transition: transform 0.5s ease;
+    display: block; /* Remove margens fantasmas na imagem */
+}
+
+.article-card:hover .article-img img {
+    transform: scale(1.05);
+}
+
+.article-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: var(--surface);
+    color: var(--gold-lt);
+    padding: 4px 12px;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    font-weight: 600;
+    z-index: 2;
+}
+
+.article-body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.article-meta {
+    display: flex;
+    gap: 16px;
+}
+
+.article-body h3 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 12px;
+    color: var(--text);
+    line-height: 1.4;
+    overflow-wrap: break-word; /* Evita palavras gigantes quebrarem a caixa */
+}
+
+.article-body p {
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.article-read-btn {
+    background: none;
+    border: none;
+    color: var(--sage);
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: left;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.3s;
+    margin-top: auto; /* Empurra o botão sempre para a base do cartão */
+}
+
+.article-read-btn:hover {
+    color: var(--gold-lt);
+}
+
+/* Paginação */
+.blog-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    width: 100%;
+}
+
+.pagination-numbers {
+    display: flex;
+    gap: 8px;
+}
+
+.page-num {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.page-num.active {
+    background: var(--gold);
+    color: var(--forest);
+    border-color: var(--gold);
+    font-weight: bold;
+}
+
+/* ── SIDEBAR ── */
+.blog-sidebar {
+    position: sticky;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    min-width: 0;
+}
+
+.sidebar-widget {
+    padding: 24px;
+}
+
+.widget-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 10px;
+}
+
+.custom-input {
+    width: 100%;
+    padding: 12px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: 4px;
+    outline: none;
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box; /* Previne overflow do input */
+}
+
+.custom-input:focus {
+    border-color: var(--sage);
+}
+
+.categories-list {
+    list-style: none;
+    padding: 0;
+}
+
+.categories-list li a {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    color: var(--text-muted);
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+    font-size: 14px;
+}
+
+.categories-list li a:hover {
+    color: var(--sage);
+    padding-left: 5px;
+}
+
+.recent-post-item {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.recent-post-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.recent-post-item h5 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text);
+    line-height: 1.3;
+    margin-bottom: 4px;
+    transition: color 0.3s;
+}
+
+.recent-post-item:hover h5 {
+    color: var(--gold-lt);
+}
+
+/* ── MODAL DE ARTIGO FULL ── */
+.modal-blog-article {
+    max-width: 800px;
+    width: 95%; /* Garante margem segura em dispositivos móveis */
+    padding: 0;
+    overflow: hidden;
+}
+
+.modal-featured-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.modal-blog-meta {
+    padding: 24px 32px 0;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.modal-body h2 {
+    padding: 16px 32px 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    overflow-wrap: break-word;
+}
+
+.modal-body p {
+    padding: 0 32px 16px;
+    color: var(--text-muted);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.blog-quote {
+    margin: 16px 32px;
+    padding: 24px;
+    background: rgba(201, 168, 76, 0.05);
+    border-left: 3px solid var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-style: italic;
+    color: var(--gold-lt);
+}
+
+.blog-list {
+    margin: 0 32px 24px 50px;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.blog-list li {
+    margin-bottom: 8px;
+}
+
+
+/* ==========================================================================
+   MEDIA QUERIES - FORÇANDO MATRIZES E CENTRAMENTO NO MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 992px) {
+    .blog-grid-layout {
+        grid-template-columns: 1fr; /* Coluna única no tablet/mobile para as secções maiores */
+    }
+    
+    .blog-sidebar {
+        position: relative;
+        top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Matriz 2x2 para os widgets da sidebar no tablet */
+        gap: 16px;
+    }
+    
+    .blog-hero {
+        height: 50vh;
+    }
+    
+    .blog-slide-overlay {
+        background: linear-gradient(160deg, rgba(13,40,24,0.95) 0%, rgba(13,40,24,0.7) 100%);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .articles-grid {
+        grid-template-columns: 1fr; /* 1 cartao de cada vez no mobile pequeno, garantindo que não há cortes */
+    }
+    
+    .blog-sidebar {
+        grid-template-columns: 1fr; /* Sidebar volta a 1 coluna em ecrãs mesmo muito pequenos */
+    }
+
+    .modal-featured-img {
+        height: 200px;
+    }
+
+    .modal-body h2 {
+        font-size: 20px;
+        padding: 16px 20px 0;
+    }
+
+    .modal-blog-meta {
+        padding: 20px 20px 0;
+    }
+
+    .modal-body p, .blog-quote {
+        padding: 0 20px 16px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .blog-filters {
+        justify-content: center;
+    }
+}

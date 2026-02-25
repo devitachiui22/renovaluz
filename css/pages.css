@@ -1,0 +1,470 @@
+/* ==========================================================================
+   RENOVALUZ - ESTILOS DAS PÁGINAS INTERNAS (SOBRE, CONTACTO & APP)
+   ========================================================================== */
+
+/* ── CONFIGURAÇÕES GERAIS ── */
+.page-main {
+    padding-top: 80px; /* Compensa o Header Fixo */
+}
+
+.text-sm {
+    font-size: 13px;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+/* ==========================================================================
+   1. PÁGINA: SOBRE NÓS E CONTACTOS (REAPROVEITADO)
+   ========================================================================== */
+.page-header {
+    padding: 60px 6vw 20px;
+    background: linear-gradient(to bottom, var(--surface), var(--bg));
+    border-bottom: 1px solid var(--border);
+}
+
+.page-hero {
+    position: relative;
+    padding: 120px 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    overflow: hidden;
+}
+
+.page-hero-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.page-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(160deg, rgba(13,40,24,0.95) 0%, rgba(13,40,24,0.7) 100%);
+    z-index: 1;
+}
+
+.page-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.page-hero-subtitle {
+    font-size: 18px;
+    color: rgba(253, 250, 244, 0.8);
+    margin-top: 16px;
+    line-height: 1.6;
+}
+
+.premium-card {
+    padding: 50px 40px;
+    background: linear-gradient(135deg, var(--card), rgba(201,168,76,0.03));
+    border: 1px solid rgba(201,168,76,0.2);
+    border-radius: 8px;
+    height: 100%;
+    text-align: center;
+}
+
+.premium-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--surface);
+    border: 1px solid var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: var(--gold-lt);
+    margin: 0 auto 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.values-matrix {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.value-card {
+    text-align: center;
+    padding: 40px 20px;
+    background: var(--card);
+}
+
+.value-icon {
+    font-size: 36px;
+    color: var(--sage);
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+.value-card h3 {
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+/* Contactos */
+.contact-grid-advanced {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: stretch;
+}
+
+.contact-info-blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contact-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    background: var(--surface);
+}
+
+.contact-block-icon {
+    font-size: 28px;
+    color: var(--gold);
+    margin-bottom: 12px;
+    padding: 12px;
+    background: rgba(201,168,76,0.1);
+    border-radius: 8px;
+}
+
+.contact-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    color: var(--sage);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.map-card {
+    padding: 0;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    min-height: 400px;
+}
+
+.form-wrapper-center {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--card);
+    padding: 50px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.custom-select {
+    width: 100%;
+    padding: 14px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: 2px;
+    font-family: 'DM Sans', sans-serif;
+    appearance: none;
+}
+
+/* ==========================================================================
+   2. PÁGINA: DOWNLOAD APP EXCLUSIVOS
+   ========================================================================== */
+
+/* Hero App & Mockup */
+.app-hero-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.app-buttons-group {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.app-buttons-secondary {
+    display: flex;
+    gap: 16px;
+}
+
+.btn-small {
+    padding: 8px 16px;
+    font-size: 10px;
+    border-color: var(--border);
+    color: var(--text-muted);
+}
+
+.btn-small:hover {
+    border-color: var(--sage);
+    color: var(--sage);
+}
+
+.btn-large {
+    padding: 18px 40px;
+    font-size: 14px;
+}
+
+.trust-signals {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 12px;
+    color: var(--text-muted);
+    font-family: 'DM Mono', monospace;
+}
+
+.trust-signals span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Visual do Telefone e Floating UI */
+.app-hero-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mockup-container {
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+}
+
+.main-phone-mockup {
+    width: 100%;
+    height: auto;
+    border-radius: 36px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+    border: 8px solid var(--surface);
+    background-color: var(--surface);
+    position: relative;
+    z-index: 2;
+}
+
+/* Interface Flutuante (Glassmorphism) */
+.floating-ui {
+    position: absolute;
+    background: rgba(18, 43, 30, 0.85); /* Fundo Translúcido Dark/Forest */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(201, 168, 76, 0.3); /* Borda Gold Light */
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    z-index: 3;
+}
+
+.ui-top-left { top: 15%; left: -60px; }
+.ui-bottom-right { bottom: 25%; right: -80px; }
+.ui-bottom-left { bottom: 10%; left: -40px; }
+
+/* Animações Flutuantes Contínuas */
+@keyframes float1 { 0% { transform: translateY(0px); } 50% { transform: translateY(-10px); } 100% { transform: translateY(0px); } }
+@keyframes float2 { 0% { transform: translateY(0px); } 50% { transform: translateY(12px); } 100% { transform: translateY(0px); } }
+@keyframes float3 { 0% { transform: translateY(0px); } 50% { transform: translateY(-8px); } 100% { transform: translateY(0px); } }
+
+.float-anim-1 { animation: float1 4s ease-in-out infinite; }
+.float-anim-2 { animation: float2 5s ease-in-out infinite; }
+.float-anim-3 { animation: float3 4.5s ease-in-out infinite; }
+
+/* Funcionalidades */
+.feature-icon-wrapper {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+/* App Slider */
+.app-screenshot-slider {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.screenshot-item {
+    padding: 20px;
+    outline: none;
+    text-align: center;
+}
+
+.screenshot-item img {
+    max-width: 220px;
+    width: 100%;
+    margin: 0 auto 16px;
+    border-radius: 24px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    border: 4px solid var(--border);
+    transition: transform 0.3s ease;
+}
+
+.screenshot-item:hover img {
+    transform: translateY(-10px);
+    border-color: var(--sage);
+}
+
+/* Benefícios em Lista */
+.secondary-phone-mockup {
+    max-width: 280px;
+    width: 100%;
+    border-radius: 36px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+}
+
+.app-benefits-list {
+    list-style: none;
+    margin-top: 24px;
+}
+
+.app-benefits-list li {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    background: var(--card);
+    padding: 16px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+}
+
+.benefit-icon {
+    font-size: 24px;
+    color: var(--sage);
+    background: rgba(82, 183, 136, 0.1);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* Seção Final & QR Codes */
+.cta-final-download {
+    background: linear-gradient(to top, var(--bg), var(--surface));
+    border-top: 1px solid var(--border);
+}
+
+.qr-codes-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.qr-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: var(--card);
+}
+
+.qr-img-wrapper {
+    background: #FFFFFF; /* Fundo sempre branco para o leitor de QR Code funcionar */
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.qr-img-wrapper img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.qr-box span {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* ==========================================================================
+   3. MEDIA QUERIES MATRIZ MOBILE (Páginas Internas)
+   ========================================================================== */
+
+@media screen and (max-width: 860px) {
+    /* Sobre Nós */
+    .page-hero { padding: 100px 4vw 60px; min-height: 40vh; }
+    .page-hero-content h1 { font-size: 36px; }
+    .page-hero-subtitle { font-size: 14px; }
+    
+    .grid-2, .grid-4 { grid-template-columns: 1fr; gap: 16px; }
+    .premium-card { padding: 30px 20px; }
+    
+    /* Matriz 2x3 para Valores */
+    .values-matrix { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+    .value-card { padding: 20px 10px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+    .value-icon { font-size: 28px; margin-bottom: 8px; }
+    .value-card h3 { font-size: 12px; margin-bottom: 6px; }
+    .value-card p { display: none; } /* Simplificação Visual Mobile */
+
+    /* Contactos */
+    .contact-grid-advanced { grid-template-columns: 1fr; gap: 24px; }
+    .contact-info-blocks { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+    .contact-block { padding: 16px 12px; align-items: center; text-align: center; }
+    .contact-block h4 { font-size: 12px; }
+    .contact-block p { display: none; }
+    .contact-link { font-size: 10px; margin-top: 6px; }
+    .map-card { min-height: 250px; }
+    .form-wrapper-center { padding: 24px; }
+    .gap-sm { gap: 0; }
+
+    /* App Download Page */
+    .app-hero-section { text-align: center; }
+    .app-buttons-group, .app-buttons-secondary, .trust-signals { justify-content: center; }
+    
+    /* Ajuste Mockup Hero Mobile */
+    .mockup-container { max-width: 220px; margin: 40px auto 0; }
+    
+    /* Ajuste Floating UI Mobile (Mantendo próximos ao telefone) */
+    .ui-top-left { left: -20px; top: 10%; padding: 8px 12px; font-size: 10px; }
+    .ui-bottom-right { right: -30px; bottom: 20%; padding: 8px 12px; font-size: 10px; }
+    .ui-bottom-left { left: -10px; bottom: 5%; padding: 8px 12px; font-size: 10px; }
+
+    /* Matriz 2x2 para Funcionalidades App */
+    .app-features-matrix { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+    .app-features-matrix .card { padding: 15px 10px; }
+    .feature-icon-wrapper { font-size: 28px; margin-bottom: 8px; }
+    .app-features-matrix h3 { font-size: 12px; margin-bottom: 0; }
+    .app-features-matrix p { display: none; } /* Oculta texto no mobile */
+
+    /* Benefícios List */
+    .app-benefits-list li { flex-direction: column; align-items: center; text-align: center; padding: 20px 10px; }
+
+    /* Matriz QR Codes 1x2 ou 2x1 dependendo do tamanho */
+    .qr-codes-wrapper { grid-template-columns: repeat(2, 1fr); display: grid; gap: 12px; }
+    .qr-img-wrapper img { width: 80px; height: 80px; }
+}
+
+@media screen and (max-width: 450px) {
+    /* Reforço para telas ultra pequenas */
+    .values-matrix, .contact-info-blocks, .app-features-matrix, .qr-codes-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+    }
+}

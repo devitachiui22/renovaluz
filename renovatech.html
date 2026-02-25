@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="pt-AO" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renovatech | Soluções Tecnológicas e Engenharia Web</title>
+    
+    <meta name="description" content="Renovatech: A divisão de tecnologia de ponta. Desenvolvimento Web, Apps Nativos, Design Gráfico e Infraestrutura Cloud.">
+    
+    <!-- Ícones -->
+    <link rel="icon" href="img/tech.png" type="image/png">
+
+    <!-- Fontes Premium Google (Foco em UI/UX Tech) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Remix Icons & DevIcons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/renovatech.css">
+</head>
+<body>
+
+    <!-- ===== BOTÃO FLUTUANTE WHATSAPP ===== -->
+    <a href="https://wa.me/244926955286?text=Olá%20Renovatech!%20Gostaria%20de%20saber%20mais%20sobre%20os%20vossos%20serviços." target="_blank" class="fab-whatsapp" aria-label="Falar no WhatsApp">
+        <i class="ri-whatsapp-fill"></i>
+    </a>
+
+    <!-- ===== HEADER PREMIIUM GLASSMORPHISM ===== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+           <div class="nav__left">
+                <a href="index.html" class="nav__logo">
+                    <div class="logo-icon-3d">
+                        <i class="ri-box-3-fill"></i>
+                    </div>
+                    <span>Renovatech</span>
+                </a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home Renovaluz</a></li>
+                    <li class="nav__item"><a href="#servicos" class="nav__link">Soluções</a></li>
+                    <li class="nav__item"><a href="#metodologia" class="nav__link">Metodologia</a></li>
+                    <li class="nav__item"><a href="#ferramentas" class="nav__link">Stack</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__actions">
+                <button class="nav__theme" id="theme-button" aria-label="Mudar tema">
+                    <i class="ri-sun-line" id="theme-icon"></i>
+                </button>
+                <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menu">
+                    <i class="ri-menu-4-line"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="main page-main" id="main-content">
+
+        <!-- ══════════════ HERO CROSSFADE (TECH) ══════════════ -->
+        <section class="tech-hero" id="home">
+            <div class="tech-slider-container" id="tech-slider">
+                
+                <!-- Slide 1 -->
+                <div class="tech-slide active">
+                    <div class="tech-slide-bg" style="background-image: url('img/back.png');"></div>
+                    <div class="tech-slide-overlay"></div>
+                    <div class="container tech-slide-content text-center">
+                        <div class="section-tag slide-badge"><i class="ri-code-s-slash-line"></i> Engenharia & Inovação</div>
+                        <h1>Escale o seu Negócio <br>com a <span class="text-gradient-neon">Renovatech</span></h1>
+                        <p>Construímos produtos digitais de alta performance. De plataformas Web complexas a Aplicações Nativas com UI/UX de nível mundial.</p>
+                        <div class="hero-actions mt-2">
+                            <a href="#servicos" class="btn btn-primary-glow"><i class="ri-rocket-line"></i> Explorar Soluções</a>
+                            <a href="https://wa.me/244926955286" target="_blank" class="btn btn-glass"><i class="ri-calendar-check-line"></i> Agendar Call</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="tech-slide">
+                    <div class="tech-slide-bg" style="background-image: url('img/iapp.jpg');"></div>
+                    <div class="tech-slide-overlay"></div>
+                    <div class="container tech-slide-content text-center">
+                        <div class="section-tag slide-badge"><i class="ri-smartphone-line"></i> Mobile First</div>
+                        <h1>Aplicações Nativas <br><span class="text-gradient-neon">Sob Medida</span></h1>
+                        <p>Colocamos a sua marca no bolso de milhões de utilizadores. Engenharia robusta para iOS e Android focada na retenção de clientes.</p>
+                        <div class="hero-actions mt-2">
+                            <a href="#servicos" class="btn btn-primary-glow"><i class="ri-layout-grid-line"></i> Ver Portfólio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="tech-slide">
+                    <div class="tech-slide-bg" style="background-image: url('img/uiux.jpg');"></div>
+                    <div class="tech-slide-overlay"></div>
+                    <div class="container tech-slide-content text-center">
+                        <div class="section-tag slide-badge"><i class="ri-layout-masonry-line"></i> UI/UX Design</div>
+                        <h1>Design Que Comunica <br><span class="text-gradient-neon">Valor e Confiança</span></h1>
+                        <p>Interfaces cristalinas, logotipos escaláveis e sistemas de design corporativo. Elevamos a perceção visual da sua empresa.</p>
+                        <div class="hero-actions mt-2">
+                            <a href="#servicos" class="btn btn-primary-glow"><i class="ri-palette-line"></i> Nossos Pacotes</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="tech-slider-controls">
+                <button class="t-dot active" data-slide="0"></button>
+                <button class="t-dot" data-slide="1"></button>
+                <button class="t-dot" data-slide="2"></button>
+            </div>
+        </section>
+
+        <!-- ══════════════ CATÁLOGO DE SERVIÇOS (GLASS CARDS) ══════════════ -->
+        <section class="section tech-services-section" id="servicos">
+            <div class="blur-blob blob-1"></div>
+            <div class="blur-blob blob-2"></div>
+            
+            <div class="container relative-z">
+                <div class="section-header text-center reveal">
+                    <div class="section-tag">O Nosso Ecossistema</div>
+                    <h2>Soluções <strong>Premium</strong></h2>
+                    <p class="text-muted">Desenvolvimento completo e infraestrutura para escalar a sua operação.</p>
+                </div>
+                
+                <div class="tech-grid">
+                    
+                    <!-- 1. Logotipo -->
+                    <div class="tech-glass-card reveal">
+                        <div class="card-glow-bg"></div>
+                        <span class="tech-badge badge-popular">Popular</span>
+                        <div class="tech-icon-3d"><i class="ri-quill-pen-fill"></i></div>
+                        <div class="card-content">
+                            <h3>Criação de Logótipo</h3>
+                            <p class="tech-desc">Design profissional e único para a sua marca com arquivos vetorizados completos.</p>
+                            <div class="tech-price-wrapper">
+                                <span class="tech-price-currency">Kz</span>
+                                <span class="tech-price">90.000</span>
+                            </div>
+                        </div>
+                        <div class="tech-card-actions">
+                            <button class="btn-glass-sm w-100" data-modal="modal-logo">Ver Detalhes</button>
+                            <button class="btn-primary-glow-sm w-100 btn-request" data-service="Criação de Logótipo">Solicitar <i class="ri-flashlight-fill"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- 2. Cartão Visita -->
+                    <div class="tech-glass-card reveal">
+                        <div class="card-glow-bg"></div>
+                        <div class="tech-icon-3d"><i class="ri-profile-fill"></i></div>
+                        <div class="card-content">
+                            <h3>Cartão de Visita</h3>
+                            <p class="tech-desc">Design frente e verso pronto para impressão e formato digital interativo (PDF).</p>
+                            <div class="tech-price-wrapper">
+                                <span class="tech-price-currency">Kz</span>
+                                <span class="tech-price">80.000</span>
+                            </div>
+                        </div>
+                        <div class="tech-card-actions">
+                            <button class="btn-glass-sm w-100" data-modal="modal-cartao">Ver Detalhes</button>
+                            <button class="btn-primary-glow-sm w-100 btn-request" data-service="Cartão de Visita">Solicitar <i class="ri-flashlight-fill"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- 3. Flyer -->
+                    <div class="tech-glass-card reveal">
+                        <div class="card-glow-bg"></div>
+                        <div class="tech-icon-3d"><i class="ri-file-paper-2-fill"></i></div>
+                        <div class="card-content">
+                            <h3>Flyer Comercial</h3>
+                            <p class="tech-desc">Material gráfico para campanhas de marketing, otimizado para redes e gráficas.</p>
+                            <div class="tech-price-wrapper">
+                                <span class="tech-price-currency">Kz</span>
+                                <span class="tech-price">100.000</span>
+                            </div>
+                        </div>
+                        <div class="tech-card-actions">
+                            <button class="btn-glass-sm w-100" data-modal="modal-flyer">Ver Detalhes</button>
+                            <button class="btn-primary-glow-sm w-100 btn-request" data-service="Flyer Comercial">Solicitar <i class="ri-flashlight-fill"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- 4. Portfólio -->
+                    <div class="tech-glass-card reveal">
+                        <div class="card-glow-bg"></div>
+                        <div class="tech-icon-3d"><i class="ri-book-read-fill"></i></div>
+                        <div class="card-content">
+                            <h3>Portfólio Empresa</h3>
+                            <p class="tech-desc">Diagramação premium (até 20 páginas) para apresentação a investidores.</p>
+                            <div class="tech-price-wrapper">
+                                <span class="tech-price-currency">Kz</span>
+                                <span class="tech-price">180.000</span>
+                            </div>
+                        </div>
+                        <div class="tech-card-actions">
+                            <button class="btn-glass-sm w-100" data-modal="modal-portfolio">Ver Detalhes</button>
+                            <button class="btn-primary-glow-sm w-100 btn-request" data-service="Portfólio Corporativo">Solicitar <i class="ri-flashlight-fill"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- 5. Manual Marca -->
+                    <div class="tech-glass-card reveal">
+                        <div class="card-glow-bg"></div>
+                        <span class="tech-badge badge-premium">Premium</span>
+                        <div class="tech-icon-3d"><i class="ri-book-mark-fill"></i></div>
+                        <div class="card-content">
+                            <h3>Manual de Marca</h3>
+                            <p class="tech-desc">O guia visual da sua empresa. Regras de uso, tipografia e mockups 3D.</p>
+                            <div class="tech-price-wrapper">
+                                <span class="tech-price-currency">Kz</span>
+                                <span class="tech-price">200.000</span>
+                            </div>
+                        </div>
+                        <div class="tech-card-actions">
+                            <button class="btn-glass-sm w-100" data-modal="modal-manual">Ver Detalhes</button>
+                            <button class="btn-primary-glow-sm w-100 btn-request" data-service="Manual de Marca">Solicitar <i class="ri-flashlight-fill"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- 6. Redes Sociais -->
+                    <div class="tech-glass-card reveal">
+                        <div class="card-glow-bg"></div>
+                        <div class="tech-icon-3d"><i class="ri-bubble-chart-fill"></i></div>
+                        <div class="card-content">
+                            <h3>Gestão de Redes</h3>
+                            <p class="tech-desc">Plano mensal (20 posts), com design exclusivo, copys focados em conversão e relatórios.</p>
+                            <div class="tech-price-wrapper">
+                                <span class="tech-price-currency">Kz</span>
+                                <span class="tech-price">220.000</span>
+                                <span class="tech-price-period">/mês</span>
+                            </div>
+                        </div>
+                        <div class="tech-card-actions">
+                            <button class="btn-glass-sm w-100" data-modal="modal-social">Ver Detalhes</button>
+                            <button class="btn-primary-glow-sm w-100 btn-request" data-service="Gestão de Redes Sociais">Solicitar <i class="ri-flashlight-fill"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- 7. Site Institucional -->
+                    <div class="tech-glass-card reveal">
+                        <div class="card-glow-bg"></div>
+                        <span class="tech-badge badge-popular">Mais Pedido</span>
+                        <div class="tech-icon-3d"><i class="ri-macbook-fill"></i></div>
+                        <div class="card-content">
+                            <h3>Site Institucional</h3>
+                            <p class="tech-desc">Landing pages e sites modernos em React/Next.js. Otimizados para SEO e conversão.</p>
+                            <div class="tech-price-wrapper">
+                                <span class="tech-price-currency">Kz</span>
+                                <span class="tech-price">250.000</span>
+                            </div>
+                        </div>
+                        <div class="tech-card-actions">
+                            <button class="btn-glass-sm w-100" data-modal="modal-site">Ver Detalhes</button>
+                            <button class="btn-primary-glow-sm w-100 btn-request" data-service="Site Institucional">Solicitar <i class="ri-flashlight-fill"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- 8. Sistema SaaS -->
+                    <div class="tech-glass-card reveal">
+                        <div class="card-glow-bg"></div>
+                        <div class="tech-icon-3d"><i class="ri-window-fill"></i></div>
+                        <div class="card-content">
+                            <h3>Sistema Web SaaS</h3>
+                            <p class="tech-desc">Plataformas de gestão, ERPs e Dashboards personalizados construídos em Node.js.</p>
+                            <div class="tech-price-wrapper">
+                                <span class="tech-price-currency">Kz</span>
+                                <span class="tech-price">400.000</span>
+                            </div>
+                        </div>
+                        <div class="tech-card-actions">
+                            <button class="btn-glass-sm w-100" data-modal="modal-sistema">Ver Detalhes</button>
+                            <button class="btn-primary-glow-sm w-100 btn-request" data-service="Sistema Web SaaS">Solicitar <i class="ri-flashlight-fill"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- 9. App Mobile -->
+                    <div class="tech-glass-card reveal">
+                        <div class="card-glow-bg"></div>
+                        <span class="tech-badge badge-premium">Enterprise</span>
+                        <div class="tech-icon-3d"><i class="ri-smartphone-fill"></i></div>
+                        <div class="card-content">
+                            <h3>App Mobile Nativo</h3>
+                            <p class="tech-desc">Engenharia Mobile para iOS e Android. Interfaces fluídas e integração com Cloud.</p>
+                            <div class="tech-price-wrapper">
+                                <span class="tech-price-currency">Kz</span>
+                                <span class="tech-price">900.000</span>
+                            </div>
+                        </div>
+                        <div class="tech-card-actions">
+                            <button class="btn-glass-sm w-100" data-modal="modal-app">Ver Detalhes</button>
+                            <button class="btn-primary-glow-sm w-100 btn-request" data-service="App Mobile">Solicitar <i class="ri-flashlight-fill"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- 10. Servidor Cloud -->
+                    <div class="tech-glass-card reveal">
+                        <div class="card-glow-bg"></div>
+                        <div class="tech-icon-3d"><i class="ri-server-fill"></i></div>
+                        <div class="card-content">
+                            <h3>Servidor Cloud VPS</h3>
+                            <p class="tech-desc">Máquina virtual dedicada de alta performance. 4GB RAM, SSD NVMe e IP próprio.</p>
+                            <div class="tech-price-wrapper">
+                                <span class="tech-price-currency">Kz</span>
+                                <span class="tech-price">120.000</span>
+                                <span class="tech-price-period">/mês</span>
+                            </div>
+                        </div>
+                        <div class="tech-card-actions">
+                            <button class="btn-glass-sm w-100" data-modal="modal-vps">Ver Detalhes</button>
+                            <button class="btn-primary-glow-sm w-100 btn-request" data-service="Servidor Cloud VPS">Solicitar <i class="ri-flashlight-fill"></i></button>
+                        </div>
+                    </div>
+                    
+                    <!-- 11. Hospedagem -->
+                    <div class="tech-glass-card reveal">
+                        <div class="card-glow-bg"></div>
+                        <div class="tech-icon-3d"><i class="ri-cloud-fill"></i></div>
+                        <div class="card-content">
+                            <h3>Hospedagem Web</h3>
+                            <p class="tech-desc">Alojamento partilhado rápido com cPanel, SSL Grátis e backups diários automáticos.</p>
+                            <div class="tech-price-wrapper">
+                                <span class="tech-price-currency">Kz</span>
+                                <span class="tech-price">110.000</span>
+                                <span class="tech-price-period">/ano</span>
+                            </div>
+                        </div>
+                        <div class="tech-card-actions">
+                            <button class="btn-glass-sm w-100" data-modal="modal-hospedagem">Ver Detalhes</button>
+                            <button class="btn-primary-glow-sm w-100 btn-request" data-service="Hospedagem Web">Solicitar <i class="ri-flashlight-fill"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- 12. Email Corporativo -->
+                    <div class="tech-glass-card reveal">
+                        <div class="card-glow-bg"></div>
+                        <div class="tech-icon-3d"><i class="ri-mail-send-fill"></i></div>
+                        <div class="card-content">
+                            <h3>Email Corporativo</h3>
+                            <p class="tech-desc">Emails profissionais (nome@suaempresa.com) com antispam avançado e painel Outlook.</p>
+                            <div class="tech-price-wrapper">
+                                <span class="tech-price-currency">Kz</span>
+                                <span class="tech-price">110.000</span>
+                                <span class="tech-price-period">/ano</span>
+                            </div>
+                        </div>
+                        <div class="tech-card-actions">
+                            <button class="btn-glass-sm w-100" data-modal="modal-email">Ver Detalhes</button>
+                            <button class="btn-primary-glow-sm w-100 btn-request" data-service="Email Corporativo">Solicitar <i class="ri-flashlight-fill"></i></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════ METODOLOGIA ÁGIL (NOVA TIMELINE) ══════════════ -->
+        <section class="section timeline-section" id="metodologia">
+            <div class="container relative-z">
+                <div class="section-header text-center reveal">
+                    <div class="section-tag">Do Papel à Cloud</div>
+                    <h2>A Nossa <strong>Metodologia</strong></h2>
+                    <p class="text-muted">Como transformamos ideias complexas em produtos digitais de classe mundial em 4 etapas.</p>
+                </div>
+
+                <div class="tech-timeline">
+                    <!-- Etapa 1 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"><i class="ri-search-eye-line"></i></div>
+                        <div class="timeline-content glass-effect">
+                            <h3>1. Discovery & UI/UX</h3>
+                            <p class="text-muted">Iniciamos com a imersão no seu modelo de negócio. Desenhamos wireframes e criamos protótipos interativos no Figma para aprovação visual antes de escrever qualquer código.</p>
+                        </div>
+                    </div>
+
+                    <!-- Etapa 2 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"><i class="ri-code-box-line"></i></div>
+                        <div class="timeline-content glass-effect">
+                            <h3>2. Engenharia de Software</h3>
+                            <p class="text-muted">A nossa equipa divide o projeto em <em>Sprints</em> semanais. Desenvolvemos o Front-end (React/Flutter) e Back-end (Node.js/Python) com arquitetura escalável e código limpo.</p>
+                        </div>
+                    </div>
+
+                    <!-- Etapa 3 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"><i class="ri-bug-line"></i></div>
+                        <div class="timeline-content glass-effect">
+                            <h3>3. QA & Testes de Carga</h3>
+                            <p class="text-muted">O produto passa por testes rigorosos de usabilidade, segurança e stress de servidores. Garantimos que o sistema não falha mesmo com milhares de acessos simultâneos.</p>
+                        </div>
+                    </div>
+
+                    <!-- Etapa 4 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"><i class="ri-rocket-line"></i></div>
+                        <div class="timeline-content glass-effect">
+                            <h3>4. Deploy & Lançamento</h3>
+                            <p class="text-muted">Colocamos a sua plataforma online utilizando infraestrutura Cloud (AWS/Vercel) e publicamos os Apps nas lojas (App Store e Google Play). Monitorizamos o pós-lançamento 24/7.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════ FERRAMENTAS MARQUEE ══════════════ -->
+        <section class="section tech-tools-section" id="ferramentas">
+            <div class="container text-center reveal">
+                <div class="section-tag">A Nossa Stack</div>
+                <h2>Tecnologias <strong>Modernas</strong></h2>
+            </div>
+            
+            <div class="marquee-wrapper reveal">
+                <div class="marquee-track">
+                    <!-- Set 1 -->
+                    <div class="tool-glass-box"><i class="devicon-figma-plain colored"></i><span>Figma</span></div>
+                    <div class="tool-glass-box"><i class="devicon-react-original colored"></i><span>React</span></div>
+                    <div class="tool-glass-box"><i class="devicon-nextjs-original text-white"></i><span>Next.js</span></div>
+                    <div class="tool-glass-box"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
+                    <div class="tool-glass-box"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+                    <div class="tool-glass-box"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                    <div class="tool-glass-box"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+                    <div class="tool-glass-box"><i class="devicon-flutter-plain colored"></i><span>Flutter</span></div>
+                    <div class="tool-glass-box"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+                    <div class="tool-glass-box"><i class="devicon-amazonwebservices-original colored"></i><span>AWS</span></div>
+                    
+                    <!-- Set 2 (Clone) -->
+                    <div class="tool-glass-box"><i class="devicon-figma-plain colored"></i><span>Figma</span></div>
+                    <div class="tool-glass-box"><i class="devicon-react-original colored"></i><span>React</span></div>
+                    <div class="tool-glass-box"><i class="devicon-nextjs-original text-white"></i><span>Next.js</span></div>
+                    <div class="tool-glass-box"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
+                    <div class="tool-glass-box"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+                    <div class="tool-glass-box"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                    <div class="tool-glass-box"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+                    <div class="tool-glass-box"><i class="devicon-flutter-plain colored"></i><span>Flutter</span></div>
+                    <div class="tool-glass-box"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+                    <div class="tool-glass-box"><i class="devicon-amazonwebservices-original colored"></i><span>AWS</span></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ══════════════ MODAL DE SERVIÇOS (VERCEL STYLE) ══════════════ -->
+    <div class="modal-overlay" id="global-tech-modal">
+        <div class="modal-box tech-glass-modal">
+            <button class="modal-close" id="close-tech-modal"><i class="ri-close-large-line"></i></button>
+            <div class="modal-body scrollable-content" id="tech-modal-content">
+                <!-- Conteúdo Injetado via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ══════════════ DADOS OCULTOS PARA OS MODAIS (100% COMPLETOS AQUI) ══════════════ -->
+    <div id="data-modal-logo" style="display:none;">
+        <h2 class="mb-1 modal-title"><i class="ri-quill-pen-fill tech-primary-text"></i> Criação de Logótipo</h2>
+        <p class="text-muted mb-2">A identidade da sua empresa começa aqui. Desenhamos marcas memoráveis, escaláveis e alinhadas com o seu propósito de mercado.</p>
+        <ul class="tech-modal-list">
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Apresentação de 3 propostas criativas distintas.</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Revisões ilimitadas até aprovação final.</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Entrega de arquivos em vetor (AI, EPS, SVG) para gráfica.</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Formatos para web (PNG transparente, JPG de alta resolução).</li>
+        </ul>
+    </div>
+
+    <div id="data-modal-cartao" style="display:none;">
+        <h2 class="mb-1 modal-title"><i class="ri-profile-fill tech-primary-text"></i> Cartão de Visita</h2>
+        <p class="text-muted mb-2">Deixe a sua marca registada nas mãos dos seus parceiros de negócios com um design premium e elegante.</p>
+        <ul class="tech-modal-list">
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Design profissional frente e verso.</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Arquivos fechados com sangria, prontos para impressão gráfica.</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> 2 Rodadas de revisão incluídas.</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Versão digital em PDF interativo com links clicáveis.</li>
+        </ul>
+    </div>
+
+    <div id="data-modal-flyer" style="display:none;">
+        <h2 class="mb-1 modal-title"><i class="ri-file-paper-2-fill tech-primary-text"></i> Flyer Comercial</h2>
+        <p class="text-muted mb-2">Comunique os seus produtos, serviços ou eventos de forma clara e visualmente agressiva para conversão de vendas.</p>
+        <ul class="tech-modal-list">
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Design personalizado focado no seu público-alvo.</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Formatos adaptados para impressão (A4/A5) em CMYK.</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Formatos digitais adaptados para WhatsApp, Instagram e Facebook.</li>
+        </ul>
+    </div>
+
+    <div id="data-modal-portfolio" style="display:none;">
+        <h2 class="mb-1 modal-title"><i class="ri-book-read-fill tech-primary-text"></i> Portfólio Corporativo</h2>
+        <p class="text-muted mb-2">Apresente a sua empresa, equipa e serviços a grandes clientes e instituições governamentais com um documento de alto padrão.</p>
+        <ul class="tech-modal-list">
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Design e diagramação profissional de até 20 páginas.</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Criação de infográficos e organização visual da informação.</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Entrega em PDF leve para WhatsApp e PDF HD para gráfica.</li>
+        </ul>
+    </div>
+
+    <div id="data-modal-manual" style="display:none;">
+        <h2 class="mb-1 modal-title"><i class="ri-book-mark-fill tech-primary-text"></i> Manual de Marca</h2>
+        <p class="text-muted mb-2">A "Bíblia" da sua empresa. Um documento vital para garantir que agências e parceiros não desvirtuem a sua marca.</p>
+        <ul class="tech-modal-list">
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Definição da paleta de cores (RGB, CMYK, HEX).</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Estudo e definição de famílias tipográficas oficiais.</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Regras de aplicação do logo (malhas de proteção, reduções).</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Mockups de aplicação em 3D (fardamento, frota, papelaria).</li>
+        </ul>
+    </div>
+
+    <div id="data-modal-social" style="display:none;">
+        <h2 class="mb-1 modal-title"><i class="ri-bubble-chart-fill tech-primary-text"></i> Gestão de Redes Sociais</h2>
+        <p class="text-muted mb-2">Cuidamos da sua presença digital enquanto se concentra no seu negócio. Atuamos no Facebook, Instagram e LinkedIn.</p>
+        <ul class="tech-modal-list">
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Planeamento de pauta e estratégia mensal.</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Criação e design gráfico de 20 publicações de alta qualidade por mês.</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Redação profissional de copys publicitários e hashtags.</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Relatório analítico de engajamento ao fim do mês.</li>
+        </ul>
+    </div>
+
+    <div id="data-modal-site" style="display:none;">
+        <h2 class="mb-1 modal-title"><i class="ri-macbook-fill tech-primary-text"></i> Site Institucional</h2>
+        <p class="text-muted mb-2">A sede virtual da sua empresa. Mais do que um "cartão de visita digital", construímos uma máquina de conversão que rankeia no Google.</p>
+        <ul class="tech-modal-list">
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Design Exclusivo, 100% responsivo para smartphones e tablets.</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Painel de administração seguro e fácil de usar.</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Otimização nativa de SEO (Core Web Vitals da Google).</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Integração com botões flutuantes de WhatsApp e Google Analytics.</li>
+        </ul>
+    </div>
+
+    <div id="data-modal-sistema" style="display:none;">
+        <h2 class="mb-1 modal-title"><i class="ri-window-fill tech-primary-text"></i> Sistema Web SaaS</h2>
+        <p class="text-muted mb-2">Automatize os processos internos da sua empresa. Construímos plataformas ERP, CRM, Portais E-learning ou Marketplaces completos.</p>
+        <ul class="tech-modal-list">
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Arquitetura de base de dados escalável e super segura.</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Dashboards e painéis de controle com gráficos em tempo real.</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Autenticação segura via JWT e hierarquia avançada de permissões.</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Integrações via API com softwares externos ou gateways de pagamento.</li>
+        </ul>
+    </div>
+
+    <div id="data-modal-app" style="display:none;">
+        <h2 class="mb-1 modal-title"><i class="ri-smartphone-fill tech-primary-text"></i> App Mobile Nativo</h2>
+        <p class="text-muted mb-2">Desenvolvemos plataformas Mobile robustas para startups e grandes corporações, abrangendo o mercado Apple e Android simultaneamente.</p>
+        <ul class="tech-modal-list">
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Estudo e design UI/UX da interface no Figma antes do código.</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Programação em frameworks modernos (React Native / Flutter).</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Integração com Back-End, Bases de Dados em Nuvem (Firebase/AWS) e APIs.</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Auxílio no lançamento nas lojas oficiais (Google Play e App Store).</li>
+        </ul>
+    </div>
+
+    <div id="data-modal-vps" style="display:none;">
+        <h2 class="mb-1 modal-title"><i class="ri-server-fill tech-primary-text"></i> Servidor Cloud VPS</h2>
+        <p class="text-muted mb-2">Para empresas que precisam de potência bruta, isolamento e velocidade extrema. Servidores Virtuais Privados geridos pelos nossos SysAdmins.</p>
+        <ul class="tech-modal-list">
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Hardware Base: 4GB RAM, 80GB SSD NVMe de altíssima velocidade.</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Tráfego mensal não medido com Uptime garantido de 99.9%.</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Acesso root completo, IP dedicado e Firewall restrito.</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Monitorização técnica da infraestrutura 24 horas por dia.</li>
+        </ul>
+    </div>
+
+    <div id="data-modal-hospedagem" style="display:none;">
+        <h2 class="mb-1 modal-title"><i class="ri-cloud-fill tech-primary-text"></i> Hospedagem Web</h2>
+        <p class="text-muted mb-2">Alojamento web premium e partilhado, ideal para sites empresariais, blogs e pequenas lojas online.</p>
+        <ul class="tech-modal-list">
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> 10GB de Armazenamento SSD Ultra rápido.</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Certificado de Segurança SSL (HTTPS) vitalício incluído.</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Painel cPanel muito intuitivo para gestão de arquivos e domínios.</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Backups automáticos diários da base de dados salvos na nuvem.</li>
+        </ul>
+    </div>
+
+    <div id="data-modal-email" style="display:none;">
+        <h2 class="mb-1 modal-title"><i class="ri-mail-send-fill tech-primary-text"></i> Email Corporativo</h2>
+        <p class="text-muted mb-2">Transmita credibilidade profissional enviando e recebendo emails com o nome da sua empresa (nome@suaempresa.co.ao).</p>
+        <ul class="tech-modal-list">
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Criação de até 5 contas profissionais totalmente criptografadas.</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Capacidade massiva: 10GB de espaço de arquivo por caixa de email.</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Configuração de proteção Anti-Spam avançada e Anti-Vírus robusta.</li>
+            <li><i class="ri-checkbox-circle-fill tech-primary-text"></i> Acesso fácil via Webmail ou integração no Outlook, Apple Mail e Mobile.</li>
+        </ul>
+    </div>
+
+    <script src="js/renovatech.js"></script>
+</body>
+</html>
