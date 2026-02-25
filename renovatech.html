@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="pt-AO" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renovatech | Soluções Tecnológicas da Renovaluz</title>
+    
+    <meta name="description" content="Renovatech: A divisão de tecnologia da Renovaluz. Desenvolvimento Web, Apps, Design Gráfico e Infraestrutura Cloud em Angola.">
+    <meta name="keywords" content="Renovatech, desenvolvimento web, aplicativos mobile, design gráfico, UI/UX, Angola, tecnologia verde">
+    <meta name="author" content="Renovatech">
+
+    <!-- Ícones e Favicons -->
+    <link rel="icon" href="img/tech.png" type="image/png">
+    <link rel="apple-touch-icon" href="img/tech.png">
+
+    <!-- Fontes Premium Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- DevIcons para as Tecnologias -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <!-- Estilos Globais e Específicos da Renovatech -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/renovatech.css">
+</head>
+<body>
+
+    <!-- ===== BOTÃO FLUTUANTE WHATSAPP (EXCLUSIVO RENOVATECH) ===== -->
+    <a href="https://wa.me/244926955286?text=Olá%20Renovatech!%20Gostaria%20de%20saber%20mais%20sobre%20os%20vossos%20serviços." target="_blank" class="fab-whatsapp" aria-label="Falar no WhatsApp">
+        <i class="ri-whatsapp-fill"></i>
+    </a>
+
+    <!-- ===== HEADER & MENU HAMBÚRGUER ===== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__left">
+                <a href="index.html" class="nav__logo" aria-label="Voltar à página inicial">
+                    <img src="img/tech.png" alt="Renovatech Logo" class="nav__logo-img" onerror="this.src='https://via.placeholder.com/40x40?text=RT'">
+                    <span>RENOVATECH</span>
+                </a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home Renovaluz</a></li>
+                    <li class="nav__item"><a href="#servicos" class="nav__link">Nossos Serviços</a></li>
+                    <li class="nav__item"><a href="#ferramentas" class="nav__link">Tecnologias</a></li>
+                    <li class="nav__item"><a href="#sobre" class="nav__link">Porquê Nós</a></li>
+                </ul>
+                <button class="nav__close" id="nav-close" aria-label="Fechar menu">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+
+            <div class="nav__actions">
+                <button class="nav__theme" id="theme-button" aria-label="Mudar tema">
+                    <i class="ri-moon-line" id="theme-icon"></i>
+                </button>
+                <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menu">
+                    <i class="ri-menu-4-line"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== MAIN CONTENT : RENOVATECH ===== -->
+    <main class="main page-main" id="main-content">
+
+        <!-- ══════════════ HERO CROSSFADE (TECH) ══════════════ -->
+        <section class="tech-hero" id="home">
+            <div class="tech-slider-container" id="tech-slider">
+                
+                <!-- Slide 1 -->
+                <div class="tech-slide active">
+                    <div class="tech-slide-bg" style="background-image: url('img/back.png');"></div>
+                    <div class="tech-slide-overlay"></div>
+                    <div class="container tech-slide-content text-center">
+                        <div class="section-tag slide-badge"><i class="ri-code-s-slash-line"></i> Divisão Tecnológica</div>
+                        <h1>Transforme o seu Negócio <br>com a <em>Renovatech</em></h1>
+                        <p>Desenvolvemos experiências digitais excecionais que impulsionam resultados. Sites, Apps, Branding e Infraestrutura Cloud de alto rendimento.</p>
+                        <div class="hero-actions mt-2">
+                            <a href="#servicos" class="btn btn-solid"><i class="ri-rocket-line"></i> Explorar Soluções</a>
+                            <a href="https://wa.me/244926955286" target="_blank" class="btn"><i class="ri-calendar-check-line"></i> Agendar Consultoria</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="tech-slide">
+                    <div class="tech-slide-bg" style="background-image: url('img/back.png');"></div>
+                    <div class="tech-slide-overlay"></div>
+                    <div class="container tech-slide-content text-center">
+                        <div class="section-tag slide-badge"><i class="ri-smartphone-line"></i> Engenharia de Software</div>
+                        <h1>Aplicativos e Sistemas <br><em>Sob Medida</em></h1>
+                        <p>Do design de interface (UI/UX) ao código final. Colocamos a sua marca no bolso de milhões de clientes com Apps iOS e Android.</p>
+                        <div class="hero-actions mt-2">
+                            <a href="#servicos" class="btn btn-solid"><i class="ri-layout-grid-line"></i> Ver Portfólio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="tech-slide">
+                    <div class="tech-slide-bg" style="background-image: url('img/back.png');"></div>
+                    <div class="tech-slide-overlay"></div>
+                    <div class="container tech-slide-content text-center">
+                        <div class="section-tag slide-badge"><i class="ri-quill-pen-line"></i> Identidade Visual</div>
+                        <h1>Design Que Comunica <br><em>Valor e Confiança</em></h1>
+                        <p>Manuais de marca, Logótipos corporativos e gestão de redes sociais. Elevamos a perceção visual da sua empresa no mercado.</p>
+                        <div class="hero-actions mt-2">
+                            <a href="#servicos" class="btn btn-solid"><i class="ri-palette-line"></i> Nossos Pacotes</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Controles do Slider -->
+            <div class="tech-slider-controls">
+                <button class="t-dot active" data-slide="0"></button>
+                <button class="t-dot" data-slide="1"></button>
+                <button class="t-dot" data-slide="2"></button>
+            </div>
+        </section>
+
+        <!-- ══════════════ CATÁLOGO DE SERVIÇOS (GRID) ══════════════ -->
+        <section class="section tech-services-section" id="servicos">
+            <div class="container">
+                <div class="section-tag text-center">O Nosso Catálogo</div>
+                <h2 class="text-center mb-2">Serviços <strong>Renovatech</strong></h2>
+                
+                <div class="tech-grid">
+                    
+                    <!-- 1. Logotipo -->
+                    <div class="tech-card reveal">
+                        <span class="tech-badge badge-popular">Popular</span>
+                        <div class="tech-icon"><i class="ri-quill-pen-fill"></i></div>
+                        <h3>Criação de Logótipo</h3>
+                        <p class="tech-desc">Design profissional e único para a sua marca com arquivos vetorizados.</p>
+                        <div class="tech-price">75.000 <span>Kz</span></div>
+                        <div class="tech-card-actions">
+                            <button class="btn btn-small w-100 mb-1" data-modal="modal-logo">Ver Detalhes</button>
+                            <button class="btn btn-solid btn-small w-100 btn-request" data-service="Criação de Logótipo">Solicitar <i class="ri-whatsapp-line"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- 2. Cartão Visita -->
+                    <div class="tech-card reveal">
+                        <div class="tech-icon"><i class="ri-profile-line"></i></div>
+                        <h3>Cartão de Visita</h3>
+                        <p class="tech-desc">Design frente e verso pronto para impressão e formato digital interativo.</p>
+                        <div class="tech-price">50.000 <span>Kz</span></div>
+                        <div class="tech-card-actions">
+                            <button class="btn btn-small w-100 mb-1" data-modal="modal-cartao">Ver Detalhes</button>
+                            <button class="btn btn-solid btn-small w-100 btn-request" data-service="Cartão de Visita">Solicitar <i class="ri-whatsapp-line"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- 3. Flyer -->
+                    <div class="tech-card reveal">
+                        <div class="tech-icon"><i class="ri-file-paper-2-line"></i></div>
+                        <h3>Flyer Comercial</h3>
+                        <p class="tech-desc">Material gráfico para campanhas, otimizado para redes sociais e gráficas.</p>
+                        <div class="tech-price">100.000 <span>Kz</span></div>
+                        <div class="tech-card-actions">
+                            <button class="btn btn-small w-100 mb-1" data-modal="modal-flyer">Ver Detalhes</button>
+                            <button class="btn btn-solid btn-small w-100 btn-request" data-service="Flyer Comercial">Solicitar <i class="ri-whatsapp-line"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- 4. Portfólio -->
+                    <div class="tech-card reveal">
+                        <div class="tech-icon"><i class="ri-book-read-line"></i></div>
+                        <h3>Portfólio Empresa</h3>
+                        <p class="tech-desc">Diagramação premium (até 20 páginas) para apresentação corporativa.</p>
+                        <div class="tech-price">140.000 <span>Kz</span></div>
+                        <div class="tech-card-actions">
+                            <button class="btn btn-small w-100 mb-1" data-modal="modal-portfolio">Ver Detalhes</button>
+                            <button class="btn btn-solid btn-small w-100 btn-request" data-service="Portfólio Corporativo">Solicitar <i class="ri-whatsapp-line"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- 5. Desdobrável -->
+                    <div class="tech-card reveal">
+                        <div class="tech-icon"><i class="ri-folder-open-line"></i></div>
+                        <h3>Desdobrável (Brochura)</h3>
+                        <p class="tech-desc">Design de 2 ou 3 dobras (Trifold) criativo para distribuição física.</p>
+                        <div class="tech-price">75.000 <span>Kz</span></div>
+                        <div class="tech-card-actions">
+                            <button class="btn btn-small w-100 mb-1" data-modal="modal-desdobravel">Ver Detalhes</button>
+                            <button class="btn btn-solid btn-small w-100 btn-request" data-service="Desdobrável (Brochura)">Solicitar <i class="ri-whatsapp-line"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- 6. Manual Marca -->
+                    <div class="tech-card reveal">
+                        <span class="tech-badge badge-premium">Premium</span>
+                        <div class="tech-icon"><i class="ri-book-mark-line"></i></div>
+                        <h3>Manual de Marca</h3>
+                        <p class="tech-desc">O guia absoluto da sua identidade visual. Regras de uso, tipografia e cores.</p>
+                        <div class="tech-price">170.000 <span>Kz</span></div>
+                        <div class="tech-card-actions">
+                            <button class="btn btn-small w-100 mb-1" data-modal="modal-manual">Ver Detalhes</button>
+                            <button class="btn btn-solid btn-small w-100 btn-request" data-service="Manual de Marca">Solicitar <i class="ri-whatsapp-line"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- 7. Redes Sociais -->
+                    <div class="tech-card reveal">
+                        <div class="tech-icon"><i class="ri-instagram-line"></i></div>
+                        <h3>Gestão Redes Sociais</h3>
+                        <p class="tech-desc">Gestão completa, 20 posts/mês, design e relatórios de engajamento.</p>
+                        <div class="tech-price">200.000 <span>Kz/mês</span></div>
+                        <div class="tech-card-actions">
+                            <button class="btn btn-small w-100 mb-1" data-modal="modal-social">Ver Detalhes</button>
+                            <button class="btn btn-solid btn-small w-100 btn-request" data-service="Gestão de Redes Sociais">Solicitar <i class="ri-whatsapp-line"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- 8. Outdoor -->
+                    <div class="tech-card reveal">
+                        <div class="tech-icon"><i class="ri-artboard-line"></i></div>
+                        <h3>Design de Outdoor</h3>
+                        <p class="tech-desc">Design de grande formato com impacto visual garantido e alta resolução.</p>
+                        <div class="tech-price">200.000 <span>Kz</span></div>
+                        <div class="tech-card-actions">
+                            <button class="btn btn-small w-100 mb-1" data-modal="modal-outdoor">Ver Detalhes</button>
+                            <button class="btn btn-solid btn-small w-100 btn-request" data-service="Design de Outdoor">Solicitar <i class="ri-whatsapp-line"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- 9. App Mobile -->
+                    <div class="tech-card reveal">
+                        <span class="tech-badge badge-premium">Premium</span>
+                        <div class="tech-icon"><i class="ri-smartphone-line"></i></div>
+                        <h3>Aplicativo Mobile</h3>
+                        <p class="tech-desc">Apps nativos e híbridos para iOS e Android com UI/UX de nível global.</p>
+                        <div class="tech-price">800.000 <span>Kz</span></div>
+                        <div class="tech-card-actions">
+                            <button class="btn btn-small w-100 mb-1" data-modal="modal-app">Ver Detalhes</button>
+                            <button class="btn btn-solid btn-small w-100 btn-request" data-service="Aplicativo Mobile">Solicitar <i class="ri-whatsapp-line"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- 10. Site -->
+                    <div class="tech-card reveal">
+                        <span class="tech-badge badge-popular">Mais Pedido</span>
+                        <div class="tech-icon"><i class="ri-macbook-line"></i></div>
+                        <h3>Site Institucional</h3>
+                        <p class="tech-desc">Website responsivo, moderno, SEO otimizado e com painel administrativo.</p>
+                        <div class="tech-price">200.000 <span>Kz</span></div>
+                        <div class="tech-card-actions">
+                            <button class="btn btn-small w-100 mb-1" data-modal="modal-site">Ver Detalhes</button>
+                            <button class="btn btn-solid btn-small w-100 btn-request" data-service="Site Institucional">Solicitar <i class="ri-whatsapp-line"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- 11. Sistema Web -->
+                    <div class="tech-card reveal">
+                        <div class="tech-icon"><i class="ri-code-box-line"></i></div>
+                        <h3>Sistema Web Custom</h3>
+                        <p class="tech-desc">Plataformas de gestão, ERPs ou CRMs desenvolvidos sob medida.</p>
+                        <div class="tech-price">350.000 <span>Kz</span></div>
+                        <div class="tech-card-actions">
+                            <button class="btn btn-small w-100 mb-1" data-modal="modal-sistema">Ver Detalhes</button>
+                            <button class="btn btn-solid btn-small w-100 btn-request" data-service="Sistema Web Customizado">Solicitar <i class="ri-whatsapp-line"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- 12. VPS -->
+                    <div class="tech-card reveal">
+                        <div class="tech-icon"><i class="ri-server-line"></i></div>
+                        <h3>Servidor VPS</h3>
+                        <p class="tech-desc">Ambiente Cloud dedicado. Alta performance (4GB RAM, 80GB SSD).</p>
+                        <div class="tech-price">100.000 <span>Kz/mês</span></div>
+                        <div class="tech-card-actions">
+                            <button class="btn btn-small w-100 mb-1" data-modal="modal-vps">Ver Detalhes</button>
+                            <button class="btn btn-solid btn-small w-100 btn-request" data-service="Servidor VPS">Solicitar <i class="ri-whatsapp-line"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- 13. Hospedagem -->
+                    <div class="tech-card reveal">
+                        <div class="tech-icon"><i class="ri-cloud-line"></i></div>
+                        <h3>Hospedagem Web</h3>
+                        <p class="tech-desc">Hospedagem partilhada rápida com cPanel, SSL Grátis e backups diários.</p>
+                        <div class="tech-price">100.000 <span>Kz/ano</span></div>
+                        <div class="tech-card-actions">
+                            <button class="btn btn-small w-100 mb-1" data-modal="modal-hospedagem">Ver Detalhes</button>
+                            <button class="btn btn-solid btn-small w-100 btn-request" data-service="Hospedagem Web">Solicitar <i class="ri-whatsapp-line"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- 14. Email -->
+                    <div class="tech-card reveal">
+                        <div class="tech-icon"><i class="ri-mail-send-line"></i></div>
+                        <h3>Correio Corporativo</h3>
+                        <p class="tech-desc">Emails profissionais (nome@suaempresa.com) com antispam avançado.</p>
+                        <div class="tech-price">100.000 <span>Kz/ano</span></div>
+                        <div class="tech-card-actions">
+                            <button class="btn btn-small w-100 mb-1" data-modal="modal-email">Ver Detalhes</button>
+                            <button class="btn btn-solid btn-small w-100 btn-request" data-service="Correio Corporativo">Solicitar <i class="ri-whatsapp-line"></i></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════ FERRAMENTAS MARQUEE (SCROLL INFINITO) ══════════════ -->
+        <section class="section tech-tools-section" id="ferramentas">
+            <div class="container text-center">
+                <div class="section-tag">O Nosso Arsenal</div>
+                <h2>Tecnologias que <strong>Dominamos</strong></h2>
+                <p class="text-muted mb-2">Utilizamos as stacks mais modernas para criar soluções robustas, seguras e escaláveis a nível global.</p>
+            </div>
+            
+            <!-- Marquee Container -->
+            <div class="marquee-wrapper">
+                <div class="marquee-track">
+                    <!-- Set 1 -->
+                    <div class="tool-box"><i class="devicon-figma-plain colored"></i><span>Figma</span></div>
+                    <div class="tool-box"><i class="devicon-illustrator-plain colored"></i><span>Illustrator</span></div>
+                    <div class="tool-box"><i class="devicon-photoshop-plain colored"></i><span>Photoshop</span></div>
+                    <div class="tool-box"><i class="devicon-react-original colored"></i><span>React</span></div>
+                    <div class="tool-box"><i class="devicon-nextjs-original colored"></i><span>Next.js</span></div>
+                    <div class="tool-box"><i class="devicon-vuejs-plain colored"></i><span>Vue.js</span></div>
+                    <div class="tool-box"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+                    <div class="tool-box"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                    <div class="tool-box"><i class="devicon-laravel-plain colored"></i><span>Laravel</span></div>
+                    <div class="tool-box"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+                    <div class="tool-box"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+                    <div class="tool-box"><i class="devicon-flutter-plain colored"></i><span>Flutter</span></div>
+                    <div class="tool-box"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+                    <div class="tool-box"><i class="devicon-amazonwebservices-original colored"></i><span>AWS</span></div>
+                    
+                    <!-- Set 2 (Clone for infinite scroll loop) -->
+                    <div class="tool-box"><i class="devicon-figma-plain colored"></i><span>Figma</span></div>
+                    <div class="tool-box"><i class="devicon-illustrator-plain colored"></i><span>Illustrator</span></div>
+                    <div class="tool-box"><i class="devicon-photoshop-plain colored"></i><span>Photoshop</span></div>
+                    <div class="tool-box"><i class="devicon-react-original colored"></i><span>React</span></div>
+                    <div class="tool-box"><i class="devicon-nextjs-original colored"></i><span>Next.js</span></div>
+                    <div class="tool-box"><i class="devicon-vuejs-plain colored"></i><span>Vue.js</span></div>
+                    <div class="tool-box"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+                    <div class="tool-box"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                    <div class="tool-box"><i class="devicon-laravel-plain colored"></i><span>Laravel</span></div>
+                    <div class="tool-box"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+                    <div class="tool-box"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+                    <div class="tool-box"><i class="devicon-flutter-plain colored"></i><span>Flutter</span></div>
+                    <div class="tool-box"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+                    <div class="tool-box"><i class="devicon-amazonwebservices-original colored"></i><span>AWS</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════ SOBRE A RENOVATECH ══════════════ -->
+        <section class="section reveal" id="sobre">
+            <div class="container grid-2 align-center">
+                <div>
+                    <div class="section-tag">Engenharia e Criatividade</div>
+                    <h2>Porquê escolher a <strong>Renovatech?</strong></h2>
+                    <p class="text-muted mt-1 mb-2">Combinamos expertise em desenvolvimento de software complexo, design gráfico refinado e UI/UX centrado no utilizador para entregar produtos digitais de excelência. Nós não criamos apenas código, construímos ferramentas de negócio.</p>
+                    
+                    <div class="tech-features-list">
+                        <div class="feature-row">
+                            <i class="ri-rocket-2-fill text-gold"></i>
+                            <div>
+                                <h4>Performance Otimizada</h4>
+                                <p class="text-muted text-sm">Sistemas rápidos que garantem a melhor experiência ao utilizador e retenção.</p>
+                            </div>
+                        </div>
+                        <div class="feature-row">
+                            <i class="ri-shield-keyhole-fill text-gold"></i>
+                            <div>
+                                <h4>Segurança de Dados Avançada</h4>
+                                <p class="text-muted text-sm">Criptografia e proteção de sistemas seguindo as normas internacionais de segurança.</p>
+                            </div>
+                        </div>
+                        <div class="feature-row">
+                            <i class="ri-smartphone-fill text-gold"></i>
+                            <div>
+                                <h4>Responsividade Total</h4>
+                                <p class="text-muted text-sm">Interfaces que se adaptam fluidamente a telemóveis, tablets e monitores gigantes.</p>
+                            </div>
+                        </div>
+                        <div class="feature-row">
+                            <i class="ri-customer-service-2-fill text-gold"></i>
+                            <div>
+                                <h4>Suporte Dedicado</h4>
+                                <p class="text-muted text-sm">Equipa angolana pronta para manter, escalar e resolver problemas do seu projeto 24/7.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-about-visual">
+                    <img src="img/app.png" alt="Dashboard Renovatech" class="floating-tech-img" onerror="this.src='https://via.placeholder.com/500x600?text=Tech+Visual'">
+                    <div class="tech-blur-glow"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ══════════════ ÁREA DOS 14 MODAIS DE SERVIÇO (GLASSMORPHISM) ══════════════ -->
+    <div class="modal-overlay" id="global-tech-modal">
+        <div class="modal-box tech-modal-box">
+            <button class="modal-close" id="close-tech-modal"><i class="ri-close-line"></i></button>
+            <div class="modal-body scrollable-content" id="tech-modal-content">
+                <!-- Injetado via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- DADOS OCULTOS PARA OS MODAIS (100% COMPLETOS) -->
+    <div id="data-modal-logo" style="display:none;">
+        <h2 class="mb-1"><i class="ri-quill-pen-fill text-gold"></i> Criação de Logótipo</h2>
+        <p class="text-muted mb-2">A identidade da sua empresa começa aqui. Desenhamos marcas memoráveis, escaláveis e alinhadas com o seu propósito de mercado.</p>
+        <ul class="tech-modal-list">
+            <li><i class="ri-check-line text-sage"></i> Apresentação de 3 propostas criativas distintas.</li>
+            <li><i class="ri-check-line text-sage"></i> Revisões ilimitadas até aprovação final.</li>
+            <li><i class="ri-check-line text-sage"></i> Entrega de arquivos em vetor (AI, EPS, SVG) para gráfica.</li>
+            <li><i class="ri-check-line text-sage"></i> Formatos para web (PNG transparente, JPG de alta resolução).</li>
+        </ul>
+    </div>
+
+    <div id="data-modal-cartao" style="display:none;">
+        <h2 class="mb-1"><i class="ri-profile-line text-gold"></i> Cartão de Visita</h2>
+        <p class="text-muted mb-2">Deixe a sua marca registada nas mãos dos seus parceiros de negócios com um design premium e elegante.</p>
+        <ul class="tech-modal-list">
+            <li><i class="ri-check-line text-sage"></i> Design profissional frente e verso.</li>
+            <li><i class="ri-check-line text-sage"></i> Arquivos fechados com sangria, prontos para impressão gráfica.</li>
+            <li><i class="ri-check-line text-sage"></i> 2 Rodadas de revisão incluídas.</li>
+            <li><i class="ri-check-line text-sage"></i> Versão digital em PDF interativo com links clicáveis.</li>
+        </ul>
+    </div>
+
+    <div id="data-modal-flyer" style="display:none;">
+        <h2 class="mb-1"><i class="ri-file-paper-2-line text-gold"></i> Flyer Comercial</h2>
+        <p class="text-muted mb-2">Comunique os seus produtos, serviços ou eventos de forma clara e visualmente agressiva para conversão de vendas.</p>
+        <ul class="tech-modal-list">
+            <li><i class="ri-check-line text-sage"></i> Design personalizado focado no seu público-alvo.</li>
+            <li><i class="ri-check-line text-sage"></i> Formatos adaptados para impressão (A4/A5) em CMYK.</li>
+            <li><i class="ri-check-line text-sage"></i> Formatos digitais adaptados para WhatsApp, Instagram e Facebook.</li>
+        </ul>
+    </div>
+
+    <div id="data-modal-portfolio" style="display:none;">
+        <h2 class="mb-1"><i class="ri-book-read-line text-gold"></i> Portfólio Corporativo</h2>
+        <p class="text-muted mb-2">Apresente a sua empresa, equipa e serviços a grandes clientes e instituições governamentais com um documento de alto padrão.</p>
+        <ul class="tech-modal-list">
+            <li><i class="ri-check-line text-sage"></i> Design e diagramação profissional de até 20 páginas.</li>
+            <li><i class="ri-check-line text-sage"></i> Criação de infográficos e organização visual da informação.</li>
+            <li><i class="ri-check-line text-sage"></i> Entrega em PDF leve para WhatsApp/Email e PDF HD para gráfica.</li>
+        </ul>
+    </div>
+
+    <div id="data-modal-desdobravel" style="display:none;">
+        <h2 class="mb-1"><i class="ri-folder-open-line text-gold"></i> Desdobrável (Brochura)</h2>
+        <p class="text-muted mb-2">Material impresso clássico e altamente eficaz para distribuir em eventos, feiras ou balcões de atendimento.</p>
+        <ul class="tech-modal-list">
+            <li><i class="ri-check-line text-sage"></i> Design de diptico (2 dobras) ou triptico (3 dobras).</li>
+            <li><i class="ri-check-line text-sage"></i> Distribuição estratégica do texto para guiar a leitura do cliente.</li>
+            <li><i class="ri-check-line text-sage"></i> Arquivo vetorizado pronto para produção em massa.</li>
+        </ul>
+    </div>
+
+    <div id="data-modal-manual" style="display:none;">
+        <h2 class="mb-1"><i class="ri-book-mark-line text-gold"></i> Manual de Marca</h2>
+        <p class="text-muted mb-2">A "Bíblia" da sua empresa. Um documento vital para garantir que gráficas, equipas de marketing e parceiros não desvirtuem a sua marca.</p>
+        <ul class="tech-modal-list">
+            <li><i class="ri-check-line text-sage"></i> Definição da paleta de cores institucional (RGB, CMYK, HEX).</li>
+            <li><i class="ri-check-line text-sage"></i> Estudo e definição de famílias tipográficas oficiais.</li>
+            <li><i class="ri-check-line text-sage"></i> Regras de aplicação do logo (malhas de proteção, reduções, restrições).</li>
+            <li><i class="ri-check-line text-sage"></i> Mockups de aplicação (fardamento, frota, papelaria).</li>
+        </ul>
+    </div>
+
+    <div id="data-modal-social" style="display:none;">
+        <h2 class="mb-1"><i class="ri-instagram-line text-gold"></i> Gestão de Redes Sociais</h2>
+        <p class="text-muted mb-2">Nós cuidamos da sua presença digital enquanto se concentra no seu negócio central. Atuamos no Facebook, Instagram e LinkedIn.</p>
+        <ul class="tech-modal-list">
+            <li><i class="ri-check-line text-sage"></i> Planeamento de pauta e estratégia mensal.</li>
+            <li><i class="ri-check-line text-sage"></i> Criação e design gráfico de 20 publicações por mês.</li>
+            <li><i class="ri-check-line text-sage"></i> Redação profissional de copys publicitários e hashtags.</li>
+            <li><i class="ri-check-line text-sage"></i> Relatório de engajamento e alcance ao fim do mês.</li>
+        </ul>
+    </div>
+
+    <div id="data-modal-outdoor" style="display:none;">
+        <h2 class="mb-1"><i class="ri-artboard-line text-gold"></i> Design de Outdoor</h2>
+        <p class="text-muted mb-2">Criação de publicidade estática de grande dimensão para vias públicas. Foco máximo em legibilidade e impacto ao primeiro segundo.</p>
+        <ul class="tech-modal-list">
+            <li><i class="ri-check-line text-sage"></i> Design de alto impacto para outdoors 3x9, 8x3 ou monopostes.</li>
+            <li><i class="ri-check-line text-sage"></i> Ficheiros exportados em super alta resolução (DPI adequado).</li>
+            <li><i class="ri-check-line text-sage"></i> Consultoria de legibilidade visual para tráfego automóvel.</li>
+        </ul>
+    </div>
+
+    <div id="data-modal-app" style="display:none;">
+        <h2 class="mb-1"><i class="ri-smartphone-line text-gold"></i> Aplicativo Mobile</h2>
+        <p class="text-muted mb-2">Desenvolvemos plataformas Mobile robustas para startups e grandes corporações, abrangendo o mercado Apple e Android simultaneamente.</p>
+        <ul class="tech-modal-list">
+            <li><i class="ri-check-line text-sage"></i> Estudo e design UI/UX da interface antes do código.</li>
+            <li><i class="ri-check-line text-sage"></i> Programação em frameworks modernos (React Native / Flutter).</li>
+            <li><i class="ri-check-line text-sage"></i> Integração com Back-End, Bases de Dados em Nuvem e APIs.</li>
+            <li><i class="ri-check-line text-sage"></i> Auxílio no lançamento nas lojas (Google Play e App Store).</li>
+        </ul>
+    </div>
+
+    <div id="data-modal-site" style="display:none;">
+        <h2 class="mb-1"><i class="ri-macbook-line text-gold"></i> Site Institucional</h2>
+        <p class="text-muted mb-2">A sede virtual da sua empresa. Mais do que um "cartão de visita digital", construímos uma máquina de conversão que rankeia no Google.</p>
+        <ul class="tech-modal-list">
+            <li><i class="ri-check-line text-sage"></i> Design Exclusivo, 100% responsivo para telemóveis.</li>
+            <li><i class="ri-check-line text-sage"></i> Painel de administração para poder atualizar textos e fotos.</li>
+            <li><i class="ri-check-line text-sage"></i> Otimização nativa de SEO para motores de busca.</li>
+            <li><i class="ri-check-line text-sage"></i> Integração com botões flutuantes de WhatsApp e redes sociais.</li>
+        </ul>
+    </div>
+
+    <div id="data-modal-sistema" style="display:none;">
+        <h2 class="mb-1"><i class="ri-code-box-line text-gold"></i> Sistema Web Customizado</h2>
+        <p class="text-muted mb-2">Automatize os processos internos da sua empresa. Construímos plataformas ERP, CRM, Portais E-learning ou Marketplaces completos.</p>
+        <ul class="tech-modal-list">
+            <li><i class="ri-check-line text-sage"></i> Arquitetura de base de dados escalável e segura.</li>
+            <li><i class="ri-check-line text-sage"></i> Dashboards e painéis de controle com gráficos em tempo real.</li>
+            <li><i class="ri-check-line text-sage"></i> Autenticação segura de usuários e hierarquia de permissões.</li>
+            <li><i class="ri-check-line text-sage"></i> Integrações via API com softwares externos ou gateways de pagamento.</li>
+        </ul>
+    </div>
+
+    <div id="data-modal-vps" style="display:none;">
+        <h2 class="mb-1"><i class="ri-server-line text-gold"></i> Servidor VPS</h2>
+        <p class="text-muted mb-2">Para empresas que precisam de potência bruta e isolamento. Servidores Virtuais Privados geridos pelos nossos SysAdmins.</p>
+        <ul class="tech-modal-list">
+            <li><i class="ri-check-line text-sage"></i> Hardware Base: 4GB RAM, 80GB SSD NVMe de alta velocidade.</li>
+            <li><i class="ri-check-line text-sage"></i> Tráfego mensal não medido.</li>
+            <li><i class="ri-check-line text-sage"></i> Acesso root completo e IP dedicado.</li>
+            <li><i class="ri-check-line text-sage"></i> Suporte técnico especializado de infraestrutura 24/7.</li>
+        </ul>
+    </div>
+
+    <div id="data-modal-hospedagem" style="display:none;">
+        <h2 class="mb-1"><i class="ri-cloud-line text-gold"></i> Hospedagem Web</h2>
+        <p class="text-muted mb-2">Alojamento web premium e partilhado, ideal para sites empresariais, blogs e pequenas lojas online angolanas.</p>
+        <ul class="tech-modal-list">
+            <li><i class="ri-check-line text-sage"></i> 10GB de Armazenamento SSD Ultra rápido.</li>
+            <li><i class="ri-check-line text-sage"></i> Certificado de Segurança SSL (HTTPS) vitalício incluído.</li>
+            <li><i class="ri-check-line text-sage"></i> Painel cPanel intuitivo para gestão de arquivos e domínios.</li>
+            <li><i class="ri-check-line text-sage"></i> Backups automáticos diários da base de dados.</li>
+        </ul>
+    </div>
+
+    <div id="data-modal-email" style="display:none;">
+        <h2 class="mb-1"><i class="ri-mail-send-line text-gold"></i> Correio Corporativo</h2>
+        <p class="text-muted mb-2">Abandone o Gmail ou Yahoo. Transmita total credibilidade profissional enviando emails com o nome da sua empresa (seu-nome@suaempresa.co.ao).</p>
+        <ul class="tech-modal-list">
+            <li><i class="ri-check-line text-sage"></i> Criação de até 5 contas profissionais.</li>
+            <li><i class="ri-check-line text-sage"></i> Capacidade massiva: 10GB de espaço de arquivo por caixa de email.</li>
+            <li><i class="ri-check-line text-sage"></i> Configuração de proteção Anti-Spam e Anti-Vírus.</li>
+            <li><i class="ri-check-line text-sage"></i> Acesso Webmail ou configuração no Outlook/Apple Mail/Smartphone.</li>
+        </ul>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/renovatech.js"></script>
+</body>
+</html>

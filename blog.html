@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="pt-AO" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Institucional | Renovaluz - Sustentabilidade em Angola</title>
+    
+    <meta name="description" content="Acompanhe as últimas notícias, eventos, projetos e relatórios de impacto da Renovaluz. Inovação e sustentabilidade em Angola.">
+    <meta name="keywords" content="Blog Renovaluz, notícias sustentabilidade, projetos ambientais, Angola, reciclagem, tecnologia verde">
+    <meta name="author" content="Renovaluz">
+
+    <!-- Ícones e Favicons -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="img/favicon-google.png">
+    <link rel="apple-touch-icon" href="img/logo.png">
+
+    <!-- Fontes Premium Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Estilos Globais e Específicos do Blog -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+
+    <!-- ===== HEADER & MENU HAMBÚRGUER ===== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__left">
+                <a href="index.html" class="nav__logo" style="display: flex; align-items: center;">
+                    <img src="img/logotipo.png" alt="Renovaluz Logo" class="nav__logo-img" 
+                        style="height: 50px; width: auto; object-fit: contain;"
+                        onerror="this.src='https://via.placeholder.com/40x40?text=RL'">
+                </a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Início</a></li>
+                    <li class="nav__item"><a href="index.html#servicos" class="nav__link">Serviços</a></li>
+                    <li class="nav__item"><a href="index.html#dossie-executivo" class="nav__link">Plano Nacional</a></li>
+                    <li class="nav__item"><a href="renovatech.html" class="nav__link">renovatech</a></li>
+                    <li class="nav__item"><a href="sobre.html" class="nav__link">Sobre</a></li>
+                    <li class="nav__item"><a href="blog.html" class="nav__link active-link">Blog</a></li>
+                    <li class="nav__item"><a href="contato.html" class="nav__link">Contato</a></li>
+                </ul>
+                <button class="nav__close" id="nav-close" aria-label="Fechar menu">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+
+            <div class="nav__actions">
+                <a href="download.html" class="btn btn-solid hide-mobile">
+                    <i class="ri-download-cloud-2-line"></i> Baixar APP
+                </a>
+                <button class="nav__theme" id="theme-button" aria-label="Mudar tema">
+                    <i class="ri-moon-line" id="theme-icon"></i>
+                </button>
+                <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menu">
+                    <i class="ri-menu-4-line"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== MAIN CONTENT : BLOG ===== -->
+    <main class="main page-main" id="main-content">
+
+        <!-- ══════════════ HERO CAROUSEL DO BLOG ══════════════ -->
+        <section class="blog-hero" id="destaques">
+            <div class="blog-slider-container" id="blog-slider">
+                
+                <!-- Slide 1 -->
+                <div class="blog-slide active">
+                    <div class="blog-slide-bg" style="background-image: url('img/mata.png');"></div>
+                    <div class="blog-slide-overlay"></div>
+                    <div class="container blog-slide-content">
+                        <div class="section-tag slide-badge"><i class="ri-leaf-line"></i> Sustentabilidade</div>
+                        <h1>Transformando <br><em>Realidades Ambientais</em></h1>
+                        <p>Mais de 50 projetos de impacto ambiental realizados, beneficiando comunidades e preservando ecossistemas com tecnologia e inovação em toda Angola.</p>
+                        <div class="slide-stats mt-2">
+                            <div><strong>50+</strong><span>Projetos</span></div>
+                            <div><strong>100K+</strong><span>Árvores</span></div>
+                            <div><strong>25+</strong><span>Cidades</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="blog-slide">
+                    <div class="blog-slide-bg" style="background-image: url('img/renova1.png');"></div>
+                    <div class="blog-slide-overlay"></div>
+                    <div class="container blog-slide-content">
+                        <div class="section-tag slide-badge"><i class="ri-cpu-line"></i> Inovação</div>
+                        <h1>Tecnologia de <br><em>Ponta Integrada</em></h1>
+                        <p>Soluções tecnológicas avançadas para sua empresa, monitoramento em tempo real e otimização de processos de gestão de resíduos.</p>
+                        <div class="slide-stats mt-2">
+                            <div><strong>IA</strong><span>Algoritmos</span></div>
+                            <div><strong>IoT</strong><span>Sensores</span></div>
+                            <div><strong>Cloud</strong><span>Dados</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="blog-slide">
+                    <div class="blog-slide-bg" style="background-image: url('img/n2.jpg');"></div>
+                    <div class="blog-slide-overlay"></div>
+                    <div class="container blog-slide-content">
+                        <div class="section-tag slide-badge"><i class="ri-calendar-event-fill"></i> ANGOTIC 2025</div>
+                        <h1>Renovaluz no <br><em>Maior Palco Tech</em></h1>
+                        <p>Apresentação do protótipo do aplicativo Renovaluz App ao Dr. Alexandre Magalhães na maior feira de tecnologia do país.</p>
+                        <a href="#artigos" class="btn btn-solid mt-2">Ler Artigo Completo</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Controles do Slider -->
+            <div class="blog-slider-controls">
+                <button class="b-dot active" data-slide="0"></button>
+                <button class="b-dot" data-slide="1"></button>
+                <button class="b-dot" data-slide="2"></button>
+            </div>
+        </section>
+
+        <!-- ══════════════ ÁREA PRINCIPAL DO BLOG (LISTAGEM + SIDEBAR) ══════════════ -->
+        <section class="section" id="artigos">
+            <div class="container blog-grid-layout">
+                
+                <!-- Coluna Esquerda: Filtros e Artigos -->
+                <div class="blog-main-column">
+                    
+                    <div class="blog-filters mb-2">
+                        <button class="filter-btn active" data-filter="all">Todos</button>
+                        <button class="filter-btn" data-filter="eventos">Eventos</button>
+                        <button class="filter-btn" data-filter="projetos">Projetos</button>
+                        <button class="filter-btn" data-filter="tecnologia">Tecnologia</button>
+                        <button class="filter-btn" data-filter="investimentos">Negócios</button>
+                    </div>
+
+                    <!-- Grelha de Artigos (Grid css gerido via JS para paginação) -->
+                    <div class="articles-grid" id="articles-container">
+                        
+                        <!-- Post 1 -->
+                        <article class="card article-card reveal" data-category="eventos">
+                            <div class="article-img">
+                                <img src="img/n.jpg" alt="Economista João Francisco" onerror="this.src='https://via.placeholder.com/400x250'">
+                                <span class="article-badge"><i class="ri-calendar-event-fill"></i> Eventos</span>
+                            </div>
+                            <div class="article-body">
+                                <div class="article-meta text-muted text-sm mb-1">
+                                    <span><i class="ri-calendar-line"></i> 15 Mar 2025</span>
+                                    <span><i class="ri-user-line"></i> Editorial</span>
+                                </div>
+                                <h3>Visita de Honra: Economista João Francisco Reconhece a Renovaluz</h3>
+                                <p class="text-muted text-sm">Durante a maior feira de tecnologia de Angola, tivemos a honra de receber o Economista João Francisco em nosso stand...</p>
+                                <button class="article-read-btn" data-modal="modal-post1">Ler Mais <i class="ri-arrow-right-line"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- Post 2 -->
+                        <article class="card article-card reveal" data-category="eventos">
+                            <div class="article-img">
+                                <img src="img/n2.jpg" alt="Protótipo Renovaluz" onerror="this.src='https://via.placeholder.com/400x250'">
+                                <span class="article-badge"><i class="ri-calendar-event-fill"></i> Eventos</span>
+                            </div>
+                            <div class="article-body">
+                                <div class="article-meta text-muted text-sm mb-1">
+                                    <span><i class="ri-calendar-line"></i> 14 Mar 2025</span>
+                                </div>
+                                <h3>Apresentação do Protótipo ao Dr. Alexandre Magalhães</h3>
+                                <p class="text-muted text-sm">É com orgulho que apresentamos o protótipo do Aplicativo Renovaluz na maior feira de tecnologia de Angola...</p>
+                                <button class="article-read-btn" data-modal="modal-post2">Ler Mais <i class="ri-arrow-right-line"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- Post 3 -->
+                        <article class="card article-card reveal" data-category="investimentos">
+                            <div class="article-img">
+                                <img src="img/n3.jpg" alt="Dr José Severino" onerror="this.src='https://via.placeholder.com/400x250'">
+                                <span class="article-badge"><i class="ri-funds-fill"></i> Negócios</span>
+                            </div>
+                            <div class="article-body">
+                                <div class="article-meta text-muted text-sm mb-1">
+                                    <span><i class="ri-calendar-line"></i> 13 Mar 2025</span>
+                                </div>
+                                <h3>Dr José Severino e a Busca por Investidores Visionários</h3>
+                                <p class="text-muted text-sm">A Renovaluz está em busca de investidores visionários que acreditam no poder da tecnologia para transformar o mundo...</p>
+                                <button class="article-read-btn" data-modal="modal-post3">Ler Mais <i class="ri-arrow-right-line"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- Post 4 -->
+                        <article class="card article-card reveal" data-category="projetos">
+                            <div class="article-img">
+                                <img src="img/mata.png" alt="Sustenvida" onerror="this.src='https://via.placeholder.com/400x250'">
+                                <span class="article-badge"><i class="ri-lightbulb-flash-fill"></i> Projetos</span>
+                            </div>
+                            <div class="article-body">
+                                <div class="article-meta text-muted text-sm mb-1">
+                                    <span><i class="ri-calendar-line"></i> 10 Mar 2025</span>
+                                </div>
+                                <h3>Projeto Sustenvida: Transformando Vidas em Angola</h3>
+                                <p class="text-muted text-sm">O Sustenvida é focado em levar educação ambiental e práticas sustentáveis para comunidades vulneráveis...</p>
+                                <button class="article-read-btn" data-modal="modal-post4">Ler Mais <i class="ri-arrow-right-line"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- Post 5 -->
+                        <article class="card article-card reveal" data-category="projetos">
+                            <div class="article-img">
+                                <img src="img/recicla.png" alt="Recicla Mais" onerror="this.src='https://via.placeholder.com/400x250'">
+                                <span class="article-badge"><i class="ri-lightbulb-flash-fill"></i> Projetos</span>
+                            </div>
+                            <div class="article-body">
+                                <div class="article-meta text-muted text-sm mb-1">
+                                    <span><i class="ri-calendar-line"></i> 08 Mar 2025</span>
+                                </div>
+                                <h3>Recicla Mais: Revolucionando a Coleta Seletiva</h3>
+                                <p class="text-muted text-sm">Nossa iniciativa para aumentar as taxas de reciclagem em Angola através de pontos de coleta estratégicos e apps...</p>
+                                <button class="article-read-btn" data-modal="modal-post5">Ler Mais <i class="ri-arrow-right-line"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- Post 6 -->
+                        <article class="card article-card reveal" data-category="tecnologia">
+                            <div class="article-img">
+                                <img src="img/renova1.png" alt="Renovatech" onerror="this.src='https://via.placeholder.com/400x250'">
+                                <span class="article-badge"><i class="ri-cpu-fill"></i> Tecnologia</span>
+                            </div>
+                            <div class="article-body">
+                                <div class="article-meta text-muted text-sm mb-1">
+                                    <span><i class="ri-calendar-line"></i> 05 Mar 2025</span>
+                                </div>
+                                <h3>Renovatech: A Tecnologia por Trás da Sustentabilidade</h3>
+                                <p class="text-muted text-sm">Conheça nossa plataforma que integra IA e IoT para otimizar processos sustentáveis no país...</p>
+                                <button class="article-read-btn" data-modal="modal-post6">Ler Mais <i class="ri-arrow-right-line"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- Post 7 -->
+                        <article class="card article-card reveal" data-category="eventos">
+                            <div class="article-img">
+                                <img src="img/uni.jpg" alt="Parceria Universidade" onerror="this.src='https://via.placeholder.com/400x250'">
+                                <span class="article-badge"><i class="ri-calendar-event-fill"></i> Eventos</span>
+                            </div>
+                            <div class="article-body">
+                                <div class="article-meta text-muted text-sm mb-1">
+                                    <span><i class="ri-calendar-line"></i> 03 Mar 2025</span>
+                                </div>
+                                <h3>Parceria Oficial com a Universidade Agostinho Neto</h3>
+                                <p class="text-muted text-sm">Assinamos um protocolo para desenvolver pesquisas em sustentabilidade e formar novos talentos...</p>
+                                <button class="article-read-btn" data-modal="modal-post7">Ler Mais <i class="ri-arrow-right-line"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- Post 8 -->
+                        <article class="card article-card reveal" data-category="projetos">
+                            <div class="article-img">
+                                <img src="img/work.jpg" alt="Workshop Professores" onerror="this.src='https://via.placeholder.com/400x250'">
+                                <span class="article-badge"><i class="ri-lightbulb-flash-fill"></i> Projetos</span>
+                            </div>
+                            <div class="article-body">
+                                <div class="article-meta text-muted text-sm mb-1">
+                                    <span><i class="ri-calendar-line"></i> 01 Mar 2025</span>
+                                </div>
+                                <h3>Workshop de Educação Ambiental Capacita 200 Professores</h3>
+                                <p class="text-muted text-sm">Realizamos um evento intensivo para capacitar educadores da rede escolar de Luanda em economia verde...</p>
+                                <button class="article-read-btn" data-modal="modal-post8">Ler Mais <i class="ri-arrow-right-line"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- Post 9 -->
+                        <article class="card article-card reveal" data-category="eventos">
+                            <div class="article-img">
+                                <img src="img/planta.jpg" alt="Prêmio Inovação" onerror="this.src='https://via.placeholder.com/400x250'">
+                                <span class="article-badge"><i class="ri-calendar-event-fill"></i> Eventos</span>
+                            </div>
+                            <div class="article-body">
+                                <div class="article-meta text-muted text-sm mb-1">
+                                    <span><i class="ri-calendar-line"></i> 28 Fev 2025</span>
+                                </div>
+                                <h3>Renovaluz Recebe Prêmio de Inovação Sustentável 2025</h3>
+                                <p class="text-muted text-sm">Fomos reconhecidos como a startup mais inovadora em gestão de resíduos de Angola...</p>
+                                <button class="article-read-btn" data-modal="modal-post9">Ler Mais <i class="ri-arrow-right-line"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- Post 10 -->
+                        <article class="card article-card reveal" data-category="projetos">
+                            <div class="article-img">
+                                <img src="img/verde.jpg" alt="Projeto Verdeação" onerror="this.src='https://via.placeholder.com/400x250'">
+                                <span class="article-badge"><i class="ri-lightbulb-flash-fill"></i> Projetos</span>
+                            </div>
+                            <div class="article-body">
+                                <div class="article-meta text-muted text-sm mb-1">
+                                    <span><i class="ri-calendar-line"></i> 25 Fev 2025</span>
+                                </div>
+                                <h3>Verdeação: Plantando o Futuro de Angola e Melhorando o Ar</h3>
+                                <p class="text-muted text-sm">O projeto já plantou mais de 10.000 árvores nativas em diversas áreas da capital...</p>
+                                <button class="article-read-btn" data-modal="modal-post10">Ler Mais <i class="ri-arrow-right-line"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- Post 11 -->
+                        <article class="card article-card reveal" data-category="tecnologia">
+                            <div class="article-img">
+                                <img src="img/planta.png" alt="IA na Coleta" onerror="this.src='https://via.placeholder.com/400x250'">
+                                <span class="article-badge"><i class="ri-cpu-fill"></i> Tecnologia</span>
+                            </div>
+                            <div class="article-body">
+                                <div class="article-meta text-muted text-sm mb-1">
+                                    <span><i class="ri-calendar-line"></i> 22 Fev 2025</span>
+                                </div>
+                                <h3>Inteligência Artificial Revoluciona Coleta de Resíduos</h3>
+                                <p class="text-muted text-sm">Integramos algoritmos preditivos que reduzem os custos logísticos da frota em até 40%...</p>
+                                <button class="article-read-btn" data-modal="modal-post11">Ler Mais <i class="ri-arrow-right-line"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- Post 12 -->
+                        <article class="card article-card reveal" data-category="eventos">
+                            <div class="article-img">
+                                <img src="img/benguela.jpg" alt="Expansão Benguela" onerror="this.src='https://via.placeholder.com/400x250'">
+                                <span class="article-badge"><i class="ri-calendar-event-fill"></i> Eventos</span>
+                            </div>
+                            <div class="article-body">
+                                <div class="article-meta text-muted text-sm mb-1">
+                                    <span><i class="ri-calendar-line"></i> 20 Fev 2025</span>
+                                </div>
+                                <h3>Renovaluz Expande Oficialmente Operações para Benguela</h3>
+                                <p class="text-muted text-sm">Inauguramos nossa primeira filial fora de Luanda, levando o nosso ecossistema verde ao sul do país...</p>
+                                <button class="article-read-btn" data-modal="modal-post12">Ler Mais <i class="ri-arrow-right-line"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- Post 13 -->
+                        <article class="card article-card reveal" data-category="tecnologia">
+                            <div class="article-img">
+                                <img src="img/planta.jpg" alt="Marketplace" onerror="this.src='https://via.placeholder.com/400x250'">
+                                <span class="article-badge"><i class="ri-cpu-fill"></i> Tecnologia</span>
+                            </div>
+                            <div class="article-body">
+                                <div class="article-meta text-muted text-sm mb-1">
+                                    <span><i class="ri-calendar-line"></i> 18 Fev 2025</span>
+                                </div>
+                                <h3>Marketplace Sustentável Atinge 5.000 Transações</h3>
+                                <p class="text-muted text-sm">A loja embutida no nosso App já recompensou milhares de cidadãos com produtos ecológicos...</p>
+                                <button class="article-read-btn" data-modal="modal-post13">Ler Mais <i class="ri-arrow-right-line"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- Post 14 -->
+                        <article class="card article-card reveal" data-category="investimentos">
+                            <div class="article-img">
+                                <img src="img/planta.jpg" alt="Rodada Seed" onerror="this.src='https://via.placeholder.com/400x250'">
+                                <span class="article-badge"><i class="ri-funds-fill"></i> Negócios</span>
+                            </div>
+                            <div class="article-body">
+                                <div class="article-meta text-muted text-sm mb-1">
+                                    <span><i class="ri-calendar-line"></i> 15 Fev 2025</span>
+                                </div>
+                                <h3>Renovaluz Capta $500K em Rodada de Investimento Seed</h3>
+                                <p class="text-muted text-sm">Fechamento bem-sucedido com investidores focados em impacto climático para expansão nacional...</p>
+                                <button class="article-read-btn" data-modal="modal-post14">Ler Mais <i class="ri-arrow-right-line"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- Post 15 -->
+                        <article class="card article-card reveal" data-category="projetos">
+                            <div class="article-img">
+                                <img src="img/planta.jpg" alt="Comunidade" onerror="this.src='https://via.placeholder.com/400x250'">
+                                <span class="article-badge"><i class="ri-lightbulb-flash-fill"></i> Projetos</span>
+                            </div>
+                            <div class="article-body">
+                                <div class="article-meta text-muted text-sm mb-1">
+                                    <span><i class="ri-calendar-line"></i> 12 Fev 2025</span>
+                                </div>
+                                <h3>Comunidade Renovaluz Atinge 50.000 Membros Ativos</h3>
+                                <p class="text-muted text-sm">A nossa rede social de reciclagem é agora a maior plataforma cívica de sustentabilidade de Angola...</p>
+                                <button class="article-read-btn" data-modal="modal-post15">Ler Mais <i class="ri-arrow-right-line"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- Post 16 -->
+                        <article class="card article-card reveal" data-category="tecnologia">
+                            <div class="article-img">
+                                <img src="img/planta.jpg" alt="Sensores IoT" onerror="this.src='https://via.placeholder.com/400x250'">
+                                <span class="article-badge"><i class="ri-cpu-fill"></i> Tecnologia</span>
+                            </div>
+                            <div class="article-body">
+                                <div class="article-meta text-muted text-sm mb-1">
+                                    <span><i class="ri-calendar-line"></i> 10 Fev 2025</span>
+                                </div>
+                                <h3>Sensores IoT Monitoram Pontos de Coleta em Tempo Real</h3>
+                                <p class="text-muted text-sm">Lixeiras inteligentes informam aos nossos servidores quando atingem 80% da capacidade...</p>
+                                <button class="article-read-btn" data-modal="modal-post16">Ler Mais <i class="ri-arrow-right-line"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- Post 17 -->
+                        <article class="card article-card reveal" data-category="eventos">
+                            <div class="article-img">
+                                <img src="img/planta.jpg" alt="Governo" onerror="this.src='https://via.placeholder.com/400x250'">
+                                <span class="article-badge"><i class="ri-calendar-event-fill"></i> Eventos</span>
+                            </div>
+                            <div class="article-body">
+                                <div class="article-meta text-muted text-sm mb-1">
+                                    <span><i class="ri-calendar-line"></i> 08 Fev 2025</span>
+                                </div>
+                                <h3>Governo Provincial Adota Renovaluz como Solução Oficial</h3>
+                                <p class="text-muted text-sm">Adoção institucional dos nossos relatórios analíticos de volumetria de resíduos urbanos...</p>
+                                <button class="article-read-btn" data-modal="modal-post17">Ler Mais <i class="ri-arrow-right-line"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- Post 18 -->
+                        <article class="card article-card reveal" data-category="projetos">
+                            <div class="article-img">
+                                <img src="img/planta.jpg" alt="Arte" onerror="this.src='https://via.placeholder.com/400x250'">
+                                <span class="article-badge"><i class="ri-lightbulb-flash-fill"></i> Projetos</span>
+                            </div>
+                            <div class="article-body">
+                                <div class="article-meta text-muted text-sm mb-1">
+                                    <span><i class="ri-calendar-line"></i> 05 Fev 2025</span>
+                                </div>
+                                <h3>Decoração Reciclada Transforma Lixo Urbano em Arte Fina</h3>
+                                <p class="text-muted text-sm">Artesãos locais patrocinados pela marca criam exposições de luxo com materiais recuperados...</p>
+                                <button class="article-read-btn" data-modal="modal-post18">Ler Mais <i class="ri-arrow-right-line"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- Post 19 -->
+                        <article class="card article-card reveal" data-category="projetos">
+                            <div class="article-img">
+                                <img src="img/planta.jpg" alt="Relatório" onerror="this.src='https://via.placeholder.com/400x250'">
+                                <span class="article-badge"><i class="ri-lightbulb-flash-fill"></i> Projetos</span>
+                            </div>
+                            <div class="article-body">
+                                <div class="article-meta text-muted text-sm mb-1">
+                                    <span><i class="ri-calendar-line"></i> 03 Fev 2025</span>
+                                </div>
+                                <h3>Relatório de Impacto: 100 Toneladas de CO2 Evitadas</h3>
+                                <p class="text-muted text-sm">Publicamos os dados auditados do impacto ambiental gerado pelos nossos usuários ativos...</p>
+                                <button class="article-read-btn" data-modal="modal-post19">Ler Mais <i class="ri-arrow-right-line"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- Post 20 -->
+                        <article class="card article-card reveal" data-category="tecnologia">
+                            <div class="article-img">
+                                <img src="img/planta.jpg" alt="Gamificação" onerror="this.src='https://via.placeholder.com/400x250'">
+                                <span class="article-badge"><i class="ri-cpu-fill"></i> Tecnologia</span>
+                            </div>
+                            <div class="article-body">
+                                <div class="article-meta text-muted text-sm mb-1">
+                                    <span><i class="ri-calendar-line"></i> 01 Fev 2025</span>
+                                </div>
+                                <h3>Gamificação do APP Aumenta Engajamento em 300%</h3>
+                                <p class="text-muted text-sm">Nosso sistema de ranking, selos digitais e ligas ambientais virou um sucesso nacional...</p>
+                                <button class="article-read-btn" data-modal="modal-post20">Ler Mais <i class="ri-arrow-right-line"></i></button>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <!-- Controles de Paginação -->
+                    <div class="blog-pagination mt-2" id="pagination-controls">
+                        <button class="btn btn-small" id="prev-page" disabled><i class="ri-arrow-left-s-line"></i> Ant.</button>
+                        <div class="pagination-numbers" id="pagination-numbers"></div>
+                        <button class="btn btn-small" id="next-page">Próx. <i class="ri-arrow-right-s-line"></i></button>
+                    </div>
+
+                </div>
+
+                <!-- Coluna Direita: Sidebar Fixa (No mobile vira Matrix 2x2) -->
+                <aside class="blog-sidebar">
+                    
+                    <div class="sidebar-widget card">
+                        <div class="search-box">
+                            <input type="text" id="blog-search" placeholder="Pesquisar artigos..." class="custom-input">
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget card">
+                        <h4 class="widget-title mb-1"><i class="ri-folder-fill text-gold"></i> Categorias</h4>
+                        <ul class="categories-list">
+                            <li><a href="#" data-filter="eventos">Eventos <span>(6)</span></a></li>
+                            <li><a href="#" data-filter="projetos">Projetos <span>(7)</span></a></li>
+                            <li><a href="#" data-filter="tecnologia">Tecnologia <span>(5)</span></a></li>
+                            <li><a href="#" data-filter="investimentos">Negócios <span>(2)</span></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-widget card">
+                        <h4 class="widget-title mb-1"><i class="ri-time-fill text-sage"></i> Mais Lidos</h4>
+                        <div class="recent-posts">
+                            <div class="recent-post-item" data-modal="modal-post1">
+                                <img src="img/n.jpg" alt="Post" onerror="this.src='https://via.placeholder.com/80'">
+                                <div>
+                                    <h5>Economista João Francisco</h5>
+                                    <span class="text-muted text-sm">15 Mar</span>
+                                </div>
+                            </div>
+                            <div class="recent-post-item" data-modal="modal-post4">
+                                <img src="img/mata.png" alt="Post" onerror="this.src='https://via.placeholder.com/80'">
+                                <div>
+                                    <h5>Projeto Sustenvida</h5>
+                                    <span class="text-muted text-sm">10 Mar</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget card" style="background: linear-gradient(135deg, var(--surface), rgba(82,183,136,0.1)); border-color: var(--sage);">
+                        <h4 class="widget-title mb-1"><i class="ri-mail-send-fill text-mint"></i> Newsletter</h4>
+                        <p class="text-muted text-sm mb-1">Receba as novidades da Renovaluz.</p>
+                        <form id="blog-newsletter" class="custom-form">
+                            <input type="email" placeholder="O seu email" required class="mb-1" style="width: 100%; padding: 10px; font-size: 13px;">
+                            <button type="submit" class="btn btn-solid w-100" style="padding: 10px;">Assinar</button>
+                        </form>
+                    </div>
+
+                </aside>
+
+            </div>
+        </section>
+    </main>
+
+     <!-- ══════════════ FOOTER GERAL ══════════════ -->
+    <footer class="footer">
+        <div class="container grid-4">
+            <div class="footer-col">
+                <a href="index.html" class="nav__logo" style="display: flex; align-items: center;">
+                    <img src="img/logotipo.png" alt="Renovaluz Logo" class="nav__logo-img" 
+                        style="height: 50px; width: auto; object-fit: contain;"
+                        onerror="this.src='https://via.placeholder.com/40x40?text=RL'">
+                </a>
+                <p class="text-muted text-sm">Plataforma Nacional de Sustentabilidade Ambiental. Transformando Angola através da sustentabilidade e economia verde.</p>
+                <div class="social-links mt-1">
+                    <a href="https://www.facebook.com/profile.php?id=100063660702302&locale=fr_CA"><i class="ri-facebook-fill"></i></a>
+                    <a href="https://www.instagram.com/renovaluzoficial/"><i class="ri-instagram-fill"></i></a>
+                    <a href="https://www.linkedin.com/company/renovaluz-oficial"><i class="ri-linkedin-fill"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=244948504916&text=Ol%C3%A1%20Renovaluz!"><i class="ri-whatsapp-fill"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="index.html#hero">Início</a></li>
+                    <li><a href="index.html#servicos">Serviços</a></li>
+                    <li><a href="index.html#projetos">Projetos</a></li>
+                    <li><a href="index.html#dossie-executivo">Dossiê Nacional</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter Institucional</h4>
+                <p class="text-muted text-sm mb-1">Receba atualizações oficiais e novidades dos nossos projetos verdes.</p>
+                <form id="newsletter-form" class="custom-form" data-endpoint="/api/newsletter/subscribe">
+                    <div class="form-group mb-1">
+                        <input type="email" id="newsletter-email" placeholder="O seu melhor email" required>
+                    </div>
+                    <button type="submit" class="btn btn-solid w-100">Subscrever <i class="ri-check-line"></i></button>
+                </form>
+            </div>
+            <div class="footer-col">
+                <h4>Contato Direto</h4>
+                <ul>
+                    <li><i class="ri-mail-line"></i> geral@renovaluz.ao</li>
+                    <li><i class="ri-phone-line"></i> +244 948 504 916</li>
+                    <li><i class="ri-map-pin-line"></i> Luanda, Rangel Bairro CTT - Digital.ao</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom text-center mt-2">
+            <small>© <span id="current-year">2025</span> Renovaluz by Renovatech. Todos os direitos reservados.</small>
+        </div>
+    </footer>
+
+    <!-- ══════════════ MODAIS DE LEITURA (ARTIGOS COMPLETOS) ══════════════ -->
+    <div class="modal-overlay" id="global-blog-modal">
+        <div class="modal-box modal-blog-article">
+            <button class="modal-close"><i class="ri-close-line"></i></button>
+            <div class="modal-body scrollable-content" id="blog-modal-content-area">
+                <!-- Conteúdo Injetado via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 20 BLOCOS DE DADOS OCULTOS PARA OS MODAIS (100% INCLUÍDOS) -->
+    
+    <div id="data-modal-post1" style="display:none;">
+        <img src="img/n.jpg" class="modal-featured-img" onerror="this.src='https://via.placeholder.com/800x400'">
+        <div class="modal-blog-meta"><span class="article-badge"><i class="ri-calendar-event-fill"></i> Eventos</span> <span class="text-muted">15 Mar 2025</span></div>
+        <h2>Visita de Honra: Economista João Francisco Reconhece o Potencial da Renovaluz</h2>
+        <p>Durante a maior feira de tecnologia de Angola, tivemos a honra de receber o Economista João Francisco em nosso stand. Com grande entusiasmo, ele reconheceu a relevância e o impacto positivo do projeto Renovaluz.</p>
+        <blockquote class="blog-quote">"Projetos como este são fundamentais para o progresso econômico sustentável de Angola" <br><small>— Economista João Francisco</small></blockquote>
+        <p>Essa visita fortalece ainda mais a nossa missão de levar inovação e sustentabilidade ao país. O Economista destacou a importância de iniciativas que combinam tecnologia e responsabilidade ambiental.</p>
+    </div>
+
+    <div id="data-modal-post2" style="display:none;">
+        <img src="img/n2.jpg" class="modal-featured-img" onerror="this.src='https://via.placeholder.com/800x400'">
+        <div class="modal-blog-meta"><span class="article-badge"><i class="ri-calendar-event-fill"></i> Eventos</span> <span class="text-muted">14 Mar 2025</span></div>
+        <h2>Apresentação do Protótipo Renovaluz ao Dr. Alexandre Magalhães</h2>
+        <p>Apresentamos o protótipo do Aplicativo Renovaluz na maior feira de tecnologia de Angola. Um projeto criado para impulsionar o desenvolvimento sustentável.</p>
+        <ul class="blog-list">
+            <li><strong>Inovação:</strong> Desenvolvido com as mais modernas tecnologias</li>
+            <li><strong>Acessibilidade:</strong> Interface intuitiva para todos</li>
+            <li><strong>Sustentabilidade:</strong> Foco em redução do impacto ambiental</li>
+        </ul>
+        <p>O Dr. Alexandre Magalhães demonstrou grande interesse no projeto e destacou o potencial de escalabilidade da solução.</p>
+    </div>
+
+    <div id="data-modal-post3" style="display:none;">
+        <img src="img/n3.jpg" class="modal-featured-img" onerror="this.src='https://via.placeholder.com/800x400'">
+        <div class="modal-blog-meta"><span class="article-badge"><i class="ri-funds-fill"></i> Negócios</span> <span class="text-muted">13 Mar 2025</span></div>
+        <h2>Dr José Severino e a Busca por Investidores Visionários</h2>
+        <p>A Renovaluz está em busca de investidores que acreditam no poder da tecnologia para transformar o mundo. Apresentamos soluções com alto potencial de impacto social e ambiental.</p>
+        <p>O Dr. José Severino, presidente da AIA, visitou nosso stand e confirmou que modelos de negócio baseados em Economia Circular são o futuro da indústria em Angola.</p>
+    </div>
+
+    <div id="data-modal-post4" style="display:none;">
+        <img src="img/mata.png" class="modal-featured-img" onerror="this.src='https://via.placeholder.com/800x400'">
+        <div class="modal-blog-meta"><span class="article-badge"><i class="ri-lightbulb-flash-fill"></i> Projetos</span> <span class="text-muted">10 Mar 2025</span></div>
+        <h2>Projeto Sustenvida: Transformando Vidas com Sustentabilidade</h2>
+        <p>O Sustenvida leva educação ambiental e práticas sustentáveis para comunidades em Angola. Através de workshops e ações práticas, transformamos a consciência ambiental.</p>
+        <p>Já impactamos mais de 5.000 pessoas em 15 comunidades. Implementamos 8 pontos de coleta seletiva e criamos 3 hortas comunitárias autossustentáveis.</p>
+    </div>
+
+    <div id="data-modal-post5" style="display:none;">
+        <img src="img/recicla.png" class="modal-featured-img" onerror="this.src='https://via.placeholder.com/800x400'">
+        <div class="modal-blog-meta"><span class="article-badge"><i class="ri-lightbulb-flash-fill"></i> Projetos</span> <span class="text-muted">08 Mar 2025</span></div>
+        <h2>Recicla Mais: Revolucionando a Reciclagem em Angola</h2>
+        <p>O Recicla Mais aumenta as taxas de reciclagem através de pontos de coleta estratégicos, um sistema de recompensas e forte educação ambiental via APP.</p>
+        <p>Desde o lançamento, já coletamos mais de 50 toneladas de materiais recicláveis, engajando mais de 10.000 utilizadores ativos que trocam lixo por produtos.</p>
+    </div>
+
+    <div id="data-modal-post6" style="display:none;">
+        <img src="img/renova1.png" class="modal-featured-img" onerror="this.src='https://via.placeholder.com/800x400'">
+        <div class="modal-blog-meta"><span class="article-badge"><i class="ri-cpu-fill"></i> Tecnologia</span> <span class="text-muted">05 Mar 2025</span></div>
+        <h2>Renovatech: A Tecnologia por Trás da Sustentabilidade</h2>
+        <p>Conheça a Renovatech, nossa plataforma tecnológica central. Ela integra Inteligência Artificial e IoT (Internet of Things) para analisar e otimizar rotas e hábitos de reciclagem.</p>
+        <p>A tecnologia Blockchain está em fase de testes para garantir rastreabilidade completa de todo o plástico retirado do oceano e ruas da capital.</p>
+    </div>
+
+    <div id="data-modal-post7" style="display:none;">
+        <img src="img/uni.jpg" class="modal-featured-img" onerror="this.src='https://via.placeholder.com/800x400'">
+        <div class="modal-blog-meta"><span class="article-badge"><i class="ri-calendar-event-fill"></i> Eventos</span> <span class="text-muted">03 Mar 2025</span></div>
+        <h2>Renovaluz Firma Parceria com a Universidade Agostinho Neto</h2>
+        <p>Assinamos um protocolo histórico de cooperação. A parceria estratégica fomenta a pesquisa universitária aplicada a soluções de energias renováveis e smart cities.</p>
+        <p>O programa inclui estágios diretos para estudantes finalistas de Engenharia e Ciências Ambientais nos escritórios e polos de triagem da RenovaLuz.</p>
+    </div>
+
+    <div id="data-modal-post8" style="display:none;">
+        <img src="img/work.jpg" class="modal-featured-img" onerror="this.src='https://via.placeholder.com/800x400'">
+        <div class="modal-blog-meta"><span class="article-badge"><i class="ri-lightbulb-flash-fill"></i> Projetos</span> <span class="text-muted">01 Mar 2025</span></div>
+        <h2>Workshop de Educação Ambiental Capacita 200 Professores</h2>
+        <p>Formamos 200 educadores de 50 escolas públicas e privadas de Luanda. O objetivo é que estes professores integrem a sustentabilidade no currículo diário das crianças.</p>
+        <p>O evento contou com entrega de kits de separação de lixo para todas as escolas participantes, financiados por parceiros corporativos.</p>
+    </div>
+
+    <div id="data-modal-post9" style="display:none;">
+        <img src="img/planta.jpg" class="modal-featured-img" onerror="this.src='https://via.placeholder.com/800x400'">
+        <div class="modal-blog-meta"><span class="article-badge"><i class="ri-calendar-event-fill"></i> Eventos</span> <span class="text-muted">28 Fev 2025</span></div>
+        <h2>Renovaluz Recebe Prêmio de Inovação Sustentável 2025</h2>
+        <p>O prémio mais importante do setor empresarial verde angolano foi entregue à RenovaLuz, reconhecendo a nossa tecnologia de ponta e capacidade de execução real no terreno.</p>
+        <p>Este troféu é dedicado a todos os nossos colaboradores e aos milhares de cidadãos que usam o nosso App diariamente.</p>
+    </div>
+
+    <div id="data-modal-post10" style="display:none;">
+        <img src="img/verde.jpg" class="modal-featured-img" onerror="this.src='https://via.placeholder.com/800x400'">
+        <div class="modal-blog-meta"><span class="article-badge"><i class="ri-lightbulb-flash-fill"></i> Projetos</span> <span class="text-muted">25 Fev 2025</span></div>
+        <h2>Verdeação: Plantando o Futuro de Angola</h2>
+        <p>O projeto Verdeação está a transformar a paisagem urbana. Em apenas 6 meses, plantámos 10.000 árvores nativas em áreas degradadas e parques urbanos, reduzindo ilhas de calor.</p>
+        <p>A manutenção é feita através de parcerias comunitárias locais, garantindo o crescimento saudável das plantas.</p>
+    </div>
+
+    <div id="data-modal-post11" style="display:none;">
+        <img src="img/planta.png" class="modal-featured-img" onerror="this.src='https://via.placeholder.com/800x400'">
+        <div class="modal-blog-meta"><span class="article-badge"><i class="ri-cpu-fill"></i> Tecnologia</span> <span class="text-muted">22 Fev 2025</span></div>
+        <h2>Inteligência Artificial Revoluciona Coleta de Resíduos</h2>
+        <p>A integração de IA preditiva no nosso back-office logístico reduziu os custos com combustíveis da nossa frota de recolha em 40%.</p>
+        <p>O algoritmo aprende as rotinas dos bairros e prevê o momento exato em que os ecopontos estarão cheios, evitando viagens desnecessárias.</p>
+    </div>
+
+    <div id="data-modal-post12" style="display:none;">
+        <img src="img/benguela.jpg" class="modal-featured-img" onerror="this.src='https://via.placeholder.com/800x400'">
+        <div class="modal-blog-meta"><span class="article-badge"><i class="ri-calendar-event-fill"></i> Eventos</span> <span class="text-muted">20 Fev 2025</span></div>
+        <h2>Renovaluz Expande Operações para Benguela</h2>
+        <p>A capital não é o limite. Inaugurámos o nosso primeiro ecoponto e polo logístico na província de Benguela. O plano é alcançar todas as províncias litorâneas até 2026.</p>
+        <p>A adoção local superou as expectativas, com mais de 2.000 downloads do app apenas na primeira semana.</p>
+    </div>
+
+    <div id="data-modal-post13" style="display:none;">
+        <img src="img/marketplace.jpg" class="modal-featured-img" onerror="this.src='https://via.placeholder.com/800x400'">
+        <div class="modal-blog-meta"><span class="article-badge"><i class="ri-cpu-fill"></i> Tecnologia</span> <span class="text-muted">18 Fev 2025</span></div>
+        <h2>Marketplace Sustentável Atinge 5.000 Transações</h2>
+        <p>A economia circular funciona! A loja dentro da nossa app registou 5.000 trocas. Utentes estão a usar os "Pontos Verdes" angariados pela reciclagem para comprar produtos alimentares e ecológicos.</p>
+    </div>
+
+    <div id="data-modal-post14" style="display:none;">
+        <img src="img/planta.jpg" class="modal-featured-img" onerror="this.src='https://via.placeholder.com/800x400'">
+        <div class="modal-blog-meta"><span class="article-badge"><i class="ri-funds-fill"></i> Negócios</span> <span class="text-muted">15 Fev 2025</span></div>
+        <h2>Renovaluz Capta $500K em Rodada Seed</h2>
+        <p>Anunciamos o fecho de uma rodada de financiamento de 500 mil dólares. Os fundos serão alocados 100% para expansão de maquinário de reciclagem avançado e melhorias na plataforma tecnológica.</p>
+    </div>
+
+    <div id="data-modal-post15" style="display:none;">
+        <img src="img/planta.jpg" class="modal-featured-img" onerror="this.src='https://via.placeholder.com/800x400'">
+        <div class="modal-blog-meta"><span class="article-badge"><i class="ri-lightbulb-flash-fill"></i> Projetos</span> <span class="text-muted">12 Fev 2025</span></div>
+        <h2>Comunidade Renovaluz Atinge 50.000 Membros Ativos</h2>
+        <p>O marco de 50 mil contas ativas no App prova que os angolanos estão sedentos por participar numa mudança ecológica real. As competições mensais entre bairros são o maior motor de engajamento.</p>
+    </div>
+
+    <div id="data-modal-post16" style="display:none;">
+        <img src="img/planta.jpg" class="modal-featured-img" onerror="this.src='https://via.placeholder.com/800x400'">
+        <div class="modal-blog-meta"><span class="article-badge"><i class="ri-cpu-fill"></i> Tecnologia</span> <span class="text-muted">10 Fev 2025</span></div>
+        <h2>Sensores IoT Monitoram Pontos de Coleta</h2>
+        <p>Os 50 maiores ecopontos da Renovaluz agora possuem sensores infravermelhos conectados à rede 4G. Eles informam à central o nível de enchimento em tempo real.</p>
+    </div>
+
+    <div id="data-modal-post17" style="display:none;">
+        <img src="img/gov.jpg" class="modal-featured-img" onerror="this.src='https://via.placeholder.com/800x400'">
+        <div class="modal-blog-meta"><span class="article-badge"><i class="ri-calendar-event-fill"></i> Eventos</span> <span class="text-muted">08 Fev 2025</span></div>
+        <h2>Governo Adota Renovaluz como Solução Oficial</h2>
+        <p>O Governo formalizou o uso dos relatórios analíticos da Renovaluz para guiar as políticas públicas de gestão de resíduos sólidos urbanos nos grandes centros habitacionais.</p>
+    </div>
+
+    <div id="data-modal-post18" style="display:none;">
+        <img src="img/5.jpg" class="modal-featured-img" onerror="this.src='https://via.placeholder.com/800x400'">
+        <div class="modal-blog-meta"><span class="article-badge"><i class="ri-lightbulb-flash-fill"></i> Projetos</span> <span class="text-muted">05 Fev 2025</span></div>
+        <h2>Decoração Reciclada Transforma Lixo em Arte</h2>
+        <p>Plásticos rígidos e pneus que seriam queimados são agora matéria-prima para artistas angolanos. O projeto gerou uma coleção de mobiliário que foi leiloada com sucesso em Luanda.</p>
+    </div>
+
+    <div id="data-modal-post19" style="display:none;">
+        <img src="img/reciclagem.jpg" class="modal-featured-img" onerror="this.src='https://via.placeholder.com/800x400'">
+        <div class="modal-blog-meta"><span class="article-badge"><i class="ri-lightbulb-flash-fill"></i> Projetos</span> <span class="text-muted">03 Fev 2025</span></div>
+        <h2>Relatório de Impacto: 100 Toneladas de CO2 Evitadas</h2>
+        <p>As nossas operações globais no último ano resultaram num saldo líquido positivo para a atmosfera angolana. Graças à reciclagem massiva, poupamos a emissão de mais de 100 toneladas de dióxido de carbono.</p>
+    </div>
+
+    <div id="data-modal-post20" style="display:none;">
+        <img src="img/planta.jpg" class="modal-featured-img" onerror="this.src='https://via.placeholder.com/800x400'">
+        <div class="modal-blog-meta"><span class="article-badge"><i class="ri-cpu-fill"></i> Tecnologia</span> <span class="text-muted">01 Fev 2025</span></div>
+        <h2>Gamificação Aumenta Engajamento em 300%</h2>
+        <p>A introdução de Badges (Selos) e Ligas Ambientais dentro do App gerou um efeito viral. O volume de lixo corretamente separado triplicou desde o lançamento do sistema de jogo.</p>
+    </div>
+
+    <!-- Scripts do Blog -->
+    <script src="js/blog.js"></script>
+</body>
+</html>
